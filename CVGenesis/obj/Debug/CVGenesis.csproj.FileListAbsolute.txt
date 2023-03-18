@@ -17,3 +17,6 @@ C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Honours_Awards.resources
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Personal_Details.resources
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Work_Experience.resources
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Skills.resources
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Academic_Template.resources
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Preview.resources
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Professional_Template.resources
