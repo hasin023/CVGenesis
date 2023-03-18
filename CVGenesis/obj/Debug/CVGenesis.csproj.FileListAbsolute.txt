@@ -3,7 +3,6 @@ C:\Hackathon\CVGenesis\CVGenesis\bin\Debug\CVGenesis.exe
 C:\Hackathon\CVGenesis\CVGenesis\bin\Debug\CVGenesis.pdb
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.AssemblyReference.cache
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.SuggestedBindingRedirects.cache
-C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.CVGenesis.resources
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Properties.Resources.resources
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.GenerateResource.cache
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.CoreCompileInputs.cache
@@ -13,3 +12,7 @@ C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Properties.Intro.resources
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Properties.Educational_Background.resources
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Properties.signup.resources
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Training.resources
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Login.resources
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Honours_Awards.resources
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Personal_Details.resources
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Work_Experience.resources
