@@ -58,10 +58,10 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Font = new System.Drawing.Font("Mistral", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(382, 13);
+            this.panel1.Location = new System.Drawing.Point(382, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(420, 727);
+            this.panel1.Size = new System.Drawing.Size(420, 757);
             this.panel1.TabIndex = 2;
             // 
             // pictureBox1
@@ -251,9 +251,9 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(53, 97);
+            this.listBox1.Location = new System.Drawing.Point(16, 126);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(294, 260);
+            this.listBox1.Size = new System.Drawing.Size(372, 244);
             this.listBox1.TabIndex = 30;
             // 
             // Educational_Background
