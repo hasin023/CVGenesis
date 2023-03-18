@@ -16,7 +16,7 @@ namespace CVGenesis
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CVGenesis());
+            Application.Run(new Login());
         }
     }
 }

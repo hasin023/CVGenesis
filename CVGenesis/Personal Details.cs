@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace CVGenesis
 {
-    public partial class Login : Form
+    public partial class Personal_Details : Form
     {
-        public Login()
+        public Personal_Details()
         {
             InitializeComponent();
         }
 
-        private void CVGenesis_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        private void Personal_Details_Load(object sender, EventArgs e)
         {
 
         }
