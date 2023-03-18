@@ -1,0 +1,3 @@
+bsc,iut,Business,2111,11
+bsc,iuttt,English language,2111,11
+bsc,iuttt,Psychology,2111,11

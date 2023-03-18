@@ -35,9 +35,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.createCVButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.loginLinkLabel = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +74,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(56, 280);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(219, 32);
+            this.label2.Size = new System.Drawing.Size(227, 34);
             this.label2.TabIndex = 1;
             this.label2.Text = "CV Genesis";
             // 
@@ -111,17 +111,18 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "_______________";
             // 
-            // button1
+            // createCVButton
             // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(450, 226);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 68);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Create Your CV";
-            this.button1.UseVisualStyleBackColor = false;
+            this.createCVButton.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.createCVButton.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.createCVButton.ForeColor = System.Drawing.Color.Transparent;
+            this.createCVButton.Location = new System.Drawing.Point(450, 226);
+            this.createCVButton.Name = "createCVButton";
+            this.createCVButton.Size = new System.Drawing.Size(195, 68);
+            this.createCVButton.TabIndex = 14;
+            this.createCVButton.Text = "Create Your CV";
+            this.createCVButton.UseVisualStyleBackColor = false;
+            this.createCVButton.Click += new System.EventHandler(this.createCVButton_Click);
             // 
             // label5
             // 
@@ -129,37 +130,40 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Location = new System.Drawing.Point(410, 328);
+            this.label5.Location = new System.Drawing.Point(391, 328);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(235, 22);
             this.label5.TabIndex = 15;
             this.label5.Text = "Already Have an Account?";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // linkLabel1
+            // loginLinkLabel
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.SystemColors.Highlight;
-            this.linkLabel1.Location = new System.Drawing.Point(642, 328);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(56, 22);
-            this.linkLabel1.TabIndex = 16;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Login";
+            this.loginLinkLabel.AutoSize = true;
+            this.loginLinkLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginLinkLabel.LinkColor = System.Drawing.SystemColors.Highlight;
+            this.loginLinkLabel.Location = new System.Drawing.Point(641, 328);
+            this.loginLinkLabel.Name = "loginLinkLabel";
+            this.loginLinkLabel.Size = new System.Drawing.Size(56, 22);
+            this.loginLinkLabel.TabIndex = 16;
+            this.loginLinkLabel.TabStop = true;
+            this.loginLinkLabel.Text = "Login";
+            this.loginLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.loginLinkLabel_LinkClicked);
             // 
             // Intro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 753);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.loginLinkLabel);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.createCVButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Intro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CVGenesis";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -177,8 +181,8 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button createCVButton;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel loginLinkLabel;
     }
 }

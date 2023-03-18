@@ -35,16 +35,17 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.userTextBox = new System.Windows.Forms.TextBox();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.passTextBox = new System.Windows.Forms.TextBox();
+            this.conPassTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.Loginbutton = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.regButton = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.guestLinkLabel = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -80,7 +81,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(69, 292);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(219, 32);
+            this.label2.Size = new System.Drawing.Size(227, 34);
             this.label2.TabIndex = 1;
             this.label2.Text = "CV Genesis";
             // 
@@ -117,49 +118,49 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "_______________";
             // 
-            // textBox1
+            // userTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox1.Location = new System.Drawing.Point(437, 230);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 28);
-            this.textBox1.TabIndex = 10;
+            this.userTextBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.userTextBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userTextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.userTextBox.Location = new System.Drawing.Point(437, 230);
+            this.userTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.userTextBox.Name = "userTextBox";
+            this.userTextBox.Size = new System.Drawing.Size(232, 28);
+            this.userTextBox.TabIndex = 10;
             // 
-            // textBox2
+            // emailTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox2.Location = new System.Drawing.Point(437, 318);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(232, 28);
-            this.textBox2.TabIndex = 11;
+            this.emailTextBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.emailTextBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.emailTextBox.Location = new System.Drawing.Point(437, 318);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(232, 28);
+            this.emailTextBox.TabIndex = 11;
             // 
-            // textBox3
+            // passTextBox
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox3.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox3.Location = new System.Drawing.Point(437, 394);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(232, 28);
-            this.textBox3.TabIndex = 12;
+            this.passTextBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.passTextBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passTextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.passTextBox.Location = new System.Drawing.Point(437, 394);
+            this.passTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.passTextBox.Name = "passTextBox";
+            this.passTextBox.Size = new System.Drawing.Size(232, 28);
+            this.passTextBox.TabIndex = 12;
             // 
-            // textBox4
+            // conPassTextBox
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox4.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox4.Location = new System.Drawing.Point(437, 471);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(232, 28);
-            this.textBox4.TabIndex = 13;
+            this.conPassTextBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.conPassTextBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.conPassTextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.conPassTextBox.Location = new System.Drawing.Point(437, 471);
+            this.conPassTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.conPassTextBox.Name = "conPassTextBox";
+            this.conPassTextBox.Size = new System.Drawing.Size(232, 28);
+            this.conPassTextBox.TabIndex = 13;
             // 
             // label5
             // 
@@ -209,52 +210,71 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "Confirm Password";
             // 
-            // Loginbutton
+            // regButton
             // 
-            this.Loginbutton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Loginbutton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loginbutton.ForeColor = System.Drawing.Color.Transparent;
-            this.Loginbutton.Location = new System.Drawing.Point(512, 525);
-            this.Loginbutton.Name = "Loginbutton";
-            this.Loginbutton.Size = new System.Drawing.Size(106, 47);
-            this.Loginbutton.TabIndex = 20;
-            this.Loginbutton.Text = "Register";
-            this.Loginbutton.UseVisualStyleBackColor = false;
+            this.regButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.regButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regButton.ForeColor = System.Drawing.Color.Transparent;
+            this.regButton.Location = new System.Drawing.Point(512, 579);
+            this.regButton.Name = "regButton";
+            this.regButton.Size = new System.Drawing.Size(106, 47);
+            this.regButton.TabIndex = 20;
+            this.regButton.Text = "Register";
+            this.regButton.UseVisualStyleBackColor = false;
+            this.regButton.Click += new System.EventHandler(this.regButton_Click_1);
             // 
-            // label9
+            // checkBox1
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label9.Location = new System.Drawing.Point(339, 365);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 22);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "User Name";
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.checkBox1.Location = new System.Drawing.Point(437, 531);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(132, 20);
+            this.checkBox1.TabIndex = 21;
+            this.checkBox1.Text = "Show Password";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // guestLinkLabel
+            // 
+            this.guestLinkLabel.AutoSize = true;
+            this.guestLinkLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guestLinkLabel.LinkColor = System.Drawing.SystemColors.Highlight;
+            this.guestLinkLabel.Location = new System.Drawing.Point(490, 644);
+            this.guestLinkLabel.Name = "guestLinkLabel";
+            this.guestLinkLabel.Size = new System.Drawing.Size(170, 22);
+            this.guestLinkLabel.TabIndex = 22;
+            this.guestLinkLabel.TabStop = true;
+            this.guestLinkLabel.Text = "Continue as Guest!";
+            this.guestLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.guestLinkLabel_LinkClicked);
             // 
             // signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 753);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.Loginbutton);
+            this.Controls.Add(this.guestLinkLabel);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.regButton);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.conPassTextBox);
+            this.Controls.Add(this.passTextBox);
+            this.Controls.Add(this.emailTextBox);
+            this.Controls.Add(this.userTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "signup";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUp";
+            this.Load += new System.EventHandler(this.signup_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -271,15 +291,16 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox userTextBox;
+        private System.Windows.Forms.TextBox emailTextBox;
+        private System.Windows.Forms.TextBox passTextBox;
+        private System.Windows.Forms.TextBox conPassTextBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button Loginbutton;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button regButton;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.LinkLabel guestLinkLabel;
     }
 }
