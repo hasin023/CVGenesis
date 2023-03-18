@@ -61,7 +61,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label32 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.yearrLabel3 = new System.Windows.Forms.Label();
+            this.resLabel3 = new System.Windows.Forms.Label();
             this.yearLabel3 = new System.Windows.Forms.Label();
             this.subLabel3 = new System.Windows.Forms.Label();
             this.InsLabel3 = new System.Windows.Forms.Label();
@@ -88,11 +88,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.firstnameLabel = new System.Windows.Forms.Label();
             this.lastnameLabel = new System.Windows.Forms.Label();
-            this.yearrLabel2 = new System.Windows.Forms.Label();
+            this.resLabel2 = new System.Windows.Forms.Label();
             this.yearLabel2 = new System.Windows.Forms.Label();
             this.subLabel2 = new System.Windows.Forms.Label();
             this.InsLabel2 = new System.Windows.Forms.Label();
-            this.yearrLabel1 = new System.Windows.Forms.Label();
+            this.resLabel1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.yearLabel1 = new System.Windows.Forms.Label();
             this.subLabel1 = new System.Windows.Forms.Label();
@@ -101,9 +101,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.degreeLabel2 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.skillLabel = new System.Windows.Forms.Label();
-            this.languageLabel = new System.Windows.Forms.Label();
+            this.lanskillLabel = new System.Windows.Forms.Label();
             this.publiLabel = new System.Windows.Forms.Label();
+            this.digitalskillLabel = new System.Windows.Forms.Label();
+            this.otherskillLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -233,7 +234,7 @@
             this.conLabel2.BackColor = System.Drawing.Color.Transparent;
             this.conLabel2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conLabel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.conLabel2.Location = new System.Drawing.Point(627, 704);
+            this.conLabel2.Location = new System.Drawing.Point(591, 704);
             this.conLabel2.Name = "conLabel2";
             this.conLabel2.Size = new System.Drawing.Size(78, 22);
             this.conLabel2.TabIndex = 107;
@@ -245,11 +246,12 @@
             this.toLabel4.BackColor = System.Drawing.Color.Transparent;
             this.toLabel4.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toLabel4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toLabel4.Location = new System.Drawing.Point(682, 737);
+            this.toLabel4.Location = new System.Drawing.Point(694, 737);
             this.toLabel4.Name = "toLabel4";
             this.toLabel4.Size = new System.Drawing.Size(30, 22);
             this.toLabel4.TabIndex = 106;
             this.toLabel4.Text = "To";
+            this.toLabel4.Click += new System.EventHandler(this.toLabel4_Click);
             // 
             // fromLabel4
             // 
@@ -257,11 +259,11 @@
             this.fromLabel4.BackColor = System.Drawing.Color.Transparent;
             this.fromLabel4.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fromLabel4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.fromLabel4.Location = new System.Drawing.Point(627, 737);
+            this.fromLabel4.Location = new System.Drawing.Point(594, 737);
             this.fromLabel4.Name = "fromLabel4";
-            this.fromLabel4.Size = new System.Drawing.Size(62, 22);
+            this.fromLabel4.Size = new System.Drawing.Size(78, 22);
             this.fromLabel4.TabIndex = 105;
-            this.fromLabel4.Text = "From-";
+            this.fromLabel4.Text = "From---";
             // 
             // emLabel2
             // 
@@ -293,7 +295,7 @@
             this.conLabel1.BackColor = System.Drawing.Color.Transparent;
             this.conLabel1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.conLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.conLabel1.Location = new System.Drawing.Point(629, 636);
+            this.conLabel1.Location = new System.Drawing.Point(587, 636);
             this.conLabel1.Name = "conLabel1";
             this.conLabel1.Size = new System.Drawing.Size(78, 22);
             this.conLabel1.TabIndex = 102;
@@ -305,11 +307,12 @@
             this.toLabel3.BackColor = System.Drawing.Color.Transparent;
             this.toLabel3.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toLabel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toLabel3.Location = new System.Drawing.Point(684, 669);
+            this.toLabel3.Location = new System.Drawing.Point(692, 669);
             this.toLabel3.Name = "toLabel3";
             this.toLabel3.Size = new System.Drawing.Size(30, 22);
             this.toLabel3.TabIndex = 101;
             this.toLabel3.Text = "To";
+            this.toLabel3.Click += new System.EventHandler(this.toLabel3_Click);
             // 
             // fromLabel3
             // 
@@ -317,11 +320,11 @@
             this.fromLabel3.BackColor = System.Drawing.Color.Transparent;
             this.fromLabel3.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fromLabel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.fromLabel3.Location = new System.Drawing.Point(629, 669);
+            this.fromLabel3.Location = new System.Drawing.Point(591, 669);
             this.fromLabel3.Name = "fromLabel3";
-            this.fromLabel3.Size = new System.Drawing.Size(62, 22);
+            this.fromLabel3.Size = new System.Drawing.Size(78, 22);
             this.fromLabel3.TabIndex = 100;
-            this.fromLabel3.Text = "From-";
+            this.fromLabel3.Text = "From---";
             // 
             // emLabel1
             // 
@@ -373,7 +376,7 @@
             this.toLabel2.BackColor = System.Drawing.Color.Transparent;
             this.toLabel2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toLabel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toLabel2.Location = new System.Drawing.Point(482, 559);
+            this.toLabel2.Location = new System.Drawing.Point(525, 559);
             this.toLabel2.Name = "toLabel2";
             this.toLabel2.Size = new System.Drawing.Size(30, 22);
             this.toLabel2.TabIndex = 95;
@@ -387,9 +390,9 @@
             this.formLabel2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.formLabel2.Location = new System.Drawing.Point(427, 559);
             this.formLabel2.Name = "formLabel2";
-            this.formLabel2.Size = new System.Drawing.Size(62, 22);
+            this.formLabel2.Size = new System.Drawing.Size(78, 22);
             this.formLabel2.TabIndex = 94;
-            this.formLabel2.Text = "From-";
+            this.formLabel2.Text = "From---";
             // 
             // orgLabel2
             // 
@@ -421,7 +424,7 @@
             this.toLabel.BackColor = System.Drawing.Color.Transparent;
             this.toLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toLabel.Location = new System.Drawing.Point(480, 462);
+            this.toLabel.Location = new System.Drawing.Point(526, 462);
             this.toLabel.Name = "toLabel";
             this.toLabel.Size = new System.Drawing.Size(30, 22);
             this.toLabel.TabIndex = 91;
@@ -435,9 +438,9 @@
             this.fromLabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.fromLabel.Location = new System.Drawing.Point(425, 462);
             this.fromLabel.Name = "fromLabel";
-            this.fromLabel.Size = new System.Drawing.Size(62, 22);
+            this.fromLabel.Size = new System.Drawing.Size(78, 22);
             this.fromLabel.TabIndex = 90;
-            this.fromLabel.Text = "From-";
+            this.fromLabel.Text = "From---";
             // 
             // orgLabel
             // 
@@ -491,17 +494,17 @@
             this.panel3.Size = new System.Drawing.Size(373, 1);
             this.panel3.TabIndex = 85;
             // 
-            // yearrLabel3
+            // resLabel3
             // 
-            this.yearrLabel3.AutoSize = true;
-            this.yearrLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.yearrLabel3.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearrLabel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.yearrLabel3.Location = new System.Drawing.Point(582, 323);
-            this.yearrLabel3.Name = "yearrLabel3";
-            this.yearrLabel3.Size = new System.Drawing.Size(64, 22);
-            this.yearrLabel3.TabIndex = 84;
-            this.yearrLabel3.Text = "Result";
+            this.resLabel3.AutoSize = true;
+            this.resLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.resLabel3.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resLabel3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.resLabel3.Location = new System.Drawing.Point(582, 323);
+            this.resLabel3.Name = "resLabel3";
+            this.resLabel3.Size = new System.Drawing.Size(64, 22);
+            this.resLabel3.TabIndex = 84;
+            this.resLabel3.Text = "Result";
             // 
             // yearLabel3
             // 
@@ -569,7 +572,7 @@
             this.label61.BackColor = System.Drawing.Color.Transparent;
             this.label61.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label61.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label61.Location = new System.Drawing.Point(25, 698);
+            this.label61.Location = new System.Drawing.Point(25, 670);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(72, 28);
             this.label61.TabIndex = 19;
@@ -722,9 +725,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(this.otherskillLabel);
+            this.panel1.Controls.Add(this.digitalskillLabel);
             this.panel1.Controls.Add(this.publiLabel);
-            this.panel1.Controls.Add(this.languageLabel);
-            this.panel1.Controls.Add(this.skillLabel);
+            this.panel1.Controls.Add(this.lanskillLabel);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.label63);
             this.panel1.Controls.Add(this.label62);
@@ -765,7 +769,7 @@
             this.label63.BackColor = System.Drawing.Color.Transparent;
             this.label63.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label63.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label63.Location = new System.Drawing.Point(25, 885);
+            this.label63.Location = new System.Drawing.Point(24, 885);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(161, 28);
             this.label63.TabIndex = 110;
@@ -819,17 +823,17 @@
             this.lastnameLabel.TabIndex = 3;
             this.lastnameLabel.Text = "Last Name";
             // 
-            // yearrLabel2
+            // resLabel2
             // 
-            this.yearrLabel2.AutoSize = true;
-            this.yearrLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.yearrLabel2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearrLabel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.yearrLabel2.Location = new System.Drawing.Point(582, 226);
-            this.yearrLabel2.Name = "yearrLabel2";
-            this.yearrLabel2.Size = new System.Drawing.Size(64, 22);
-            this.yearrLabel2.TabIndex = 79;
-            this.yearrLabel2.Text = "Result";
+            this.resLabel2.AutoSize = true;
+            this.resLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.resLabel2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resLabel2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.resLabel2.Location = new System.Drawing.Point(582, 226);
+            this.resLabel2.Name = "resLabel2";
+            this.resLabel2.Size = new System.Drawing.Size(64, 22);
+            this.resLabel2.TabIndex = 79;
+            this.resLabel2.Text = "Result";
             // 
             // yearLabel2
             // 
@@ -842,6 +846,7 @@
             this.yearLabel2.Size = new System.Drawing.Size(47, 22);
             this.yearLabel2.TabIndex = 78;
             this.yearLabel2.Text = "Year";
+            this.yearLabel2.Click += new System.EventHandler(this.yearLabel2_Click);
             // 
             // subLabel2
             // 
@@ -867,26 +872,26 @@
             this.InsLabel2.TabIndex = 76;
             this.InsLabel2.Text = "Institution";
             // 
-            // yearrLabel1
+            // resLabel1
             // 
-            this.yearrLabel1.AutoSize = true;
-            this.yearrLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.yearrLabel1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearrLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.yearrLabel1.Location = new System.Drawing.Point(582, 128);
-            this.yearrLabel1.Name = "yearrLabel1";
-            this.yearrLabel1.Size = new System.Drawing.Size(64, 22);
-            this.yearrLabel1.TabIndex = 74;
-            this.yearrLabel1.Text = "Result";
+            this.resLabel1.AutoSize = true;
+            this.resLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.resLabel1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.resLabel1.Location = new System.Drawing.Point(582, 128);
+            this.resLabel1.Name = "resLabel1";
+            this.resLabel1.Size = new System.Drawing.Size(64, 22);
+            this.resLabel1.TabIndex = 74;
+            this.resLabel1.Text = "Result";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Highlight;
             this.panel2.Font = new System.Drawing.Font("Mistral", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(803, -2);
+            this.panel2.Location = new System.Drawing.Point(830, -2);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(89, 1059);
+            this.panel2.Size = new System.Drawing.Size(62, 1059);
             this.panel2.TabIndex = 73;
             // 
             // yearLabel1
@@ -972,29 +977,17 @@
             this.label15.Size = new System.Drawing.Size(0, 35);
             this.label15.TabIndex = 67;
             // 
-            // skillLabel
+            // lanskillLabel
             // 
-            this.skillLabel.AutoSize = true;
-            this.skillLabel.BackColor = System.Drawing.Color.Transparent;
-            this.skillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.skillLabel.Location = new System.Drawing.Point(31, 749);
-            this.skillLabel.Name = "skillLabel";
-            this.skillLabel.Size = new System.Drawing.Size(79, 22);
-            this.skillLabel.TabIndex = 112;
-            this.skillLabel.Text = "Address";
-            // 
-            // languageLabel
-            // 
-            this.languageLabel.AutoSize = true;
-            this.languageLabel.BackColor = System.Drawing.Color.Transparent;
-            this.languageLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.languageLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.languageLabel.Location = new System.Drawing.Point(30, 838);
-            this.languageLabel.Name = "languageLabel";
-            this.languageLabel.Size = new System.Drawing.Size(79, 22);
-            this.languageLabel.TabIndex = 113;
-            this.languageLabel.Text = "Address";
+            this.lanskillLabel.AutoSize = true;
+            this.lanskillLabel.BackColor = System.Drawing.Color.Transparent;
+            this.lanskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lanskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lanskillLabel.Location = new System.Drawing.Point(31, 835);
+            this.lanskillLabel.Name = "lanskillLabel";
+            this.lanskillLabel.Size = new System.Drawing.Size(79, 22);
+            this.lanskillLabel.TabIndex = 112;
+            this.lanskillLabel.Text = "Address";
             // 
             // publiLabel
             // 
@@ -1007,6 +1000,30 @@
             this.publiLabel.Size = new System.Drawing.Size(79, 22);
             this.publiLabel.TabIndex = 114;
             this.publiLabel.Text = "Address";
+            // 
+            // digitalskillLabel
+            // 
+            this.digitalskillLabel.AutoSize = true;
+            this.digitalskillLabel.BackColor = System.Drawing.Color.Transparent;
+            this.digitalskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.digitalskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.digitalskillLabel.Location = new System.Drawing.Point(31, 706);
+            this.digitalskillLabel.Name = "digitalskillLabel";
+            this.digitalskillLabel.Size = new System.Drawing.Size(79, 22);
+            this.digitalskillLabel.TabIndex = 115;
+            this.digitalskillLabel.Text = "Address";
+            // 
+            // otherskillLabel
+            // 
+            this.otherskillLabel.AutoSize = true;
+            this.otherskillLabel.BackColor = System.Drawing.Color.Transparent;
+            this.otherskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.otherskillLabel.Location = new System.Drawing.Point(31, 752);
+            this.otherskillLabel.Name = "otherskillLabel";
+            this.otherskillLabel.Size = new System.Drawing.Size(79, 22);
+            this.otherskillLabel.TabIndex = 116;
+            this.otherskillLabel.Text = "Address";
             // 
             // Academic_Template
             // 
@@ -1047,17 +1064,17 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.yearrLabel3);
+            this.Controls.Add(this.resLabel3);
             this.Controls.Add(this.yearLabel3);
             this.Controls.Add(this.subLabel3);
             this.Controls.Add(this.InsLabel3);
             this.Controls.Add(this.degreeLabel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.yearrLabel2);
+            this.Controls.Add(this.resLabel2);
             this.Controls.Add(this.yearLabel2);
             this.Controls.Add(this.subLabel2);
             this.Controls.Add(this.InsLabel2);
-            this.Controls.Add(this.yearrLabel1);
+            this.Controls.Add(this.resLabel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.yearLabel1);
             this.Controls.Add(this.subLabel1);
@@ -1114,7 +1131,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label yearrLabel3;
+        private System.Windows.Forms.Label resLabel3;
         private System.Windows.Forms.Label yearLabel3;
         private System.Windows.Forms.Label subLabel3;
         private System.Windows.Forms.Label InsLabel3;
@@ -1139,11 +1156,11 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label firstnameLabel;
         private System.Windows.Forms.Label lastnameLabel;
-        private System.Windows.Forms.Label yearrLabel2;
+        private System.Windows.Forms.Label resLabel2;
         private System.Windows.Forms.Label yearLabel2;
         private System.Windows.Forms.Label subLabel2;
         private System.Windows.Forms.Label InsLabel2;
-        private System.Windows.Forms.Label yearrLabel1;
+        private System.Windows.Forms.Label resLabel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label yearLabel1;
         private System.Windows.Forms.Label subLabel1;
@@ -1155,7 +1172,8 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label publiLabel;
-        private System.Windows.Forms.Label languageLabel;
-        private System.Windows.Forms.Label skillLabel;
+        private System.Windows.Forms.Label lanskillLabel;
+        private System.Windows.Forms.Label digitalskillLabel;
+        private System.Windows.Forms.Label otherskillLabel;
     }
 }

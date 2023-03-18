@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Educational_Background));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BackButton = new System.Windows.Forms.Button();
+            this.eduListBox = new System.Windows.Forms.ListBox();
+            this.NextButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,11 +47,8 @@
             this.resultTextBox = new System.Windows.Forms.TextBox();
             this.SubjectComboBox = new System.Windows.Forms.ComboBox();
             this.AddDegreeButton = new System.Windows.Forms.Button();
-            this.NextButton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.eduListBox = new System.Windows.Forms.ListBox();
             this.SaveButton = new System.Windows.Forms.Button();
-            this.BackButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -67,6 +67,43 @@
             this.panel1.Size = new System.Drawing.Size(532, 757);
             this.panel1.TabIndex = 2;
             // 
+            // BackButton
+            // 
+            this.BackButton.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.BackButton.Location = new System.Drawing.Point(42, 542);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(106, 41);
+            this.BackButton.TabIndex = 32;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = false;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
+            // eduListBox
+            // 
+            this.eduListBox.BackColor = System.Drawing.SystemColors.Highlight;
+            this.eduListBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eduListBox.FormattingEnabled = true;
+            this.eduListBox.ItemHeight = 22;
+            this.eduListBox.Location = new System.Drawing.Point(0, 126);
+            this.eduListBox.Name = "eduListBox";
+            this.eduListBox.Size = new System.Drawing.Size(518, 224);
+            this.eduListBox.TabIndex = 30;
+            // 
+            // NextButton
+            // 
+            this.NextButton.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.NextButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NextButton.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.NextButton.Location = new System.Drawing.Point(389, 542);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(106, 41);
+            this.NextButton.TabIndex = 29;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = false;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -82,7 +119,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(-4, 33);
+            this.label1.Location = new System.Drawing.Point(-8, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(380, 35);
             this.label1.TabIndex = 4;
@@ -238,19 +275,6 @@
             this.AddDegreeButton.UseVisualStyleBackColor = false;
             this.AddDegreeButton.Click += new System.EventHandler(this.AddDegreeButton_Click);
             // 
-            // NextButton
-            // 
-            this.NextButton.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.NextButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextButton.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.NextButton.Location = new System.Drawing.Point(389, 542);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(106, 41);
-            this.NextButton.TabIndex = 29;
-            this.NextButton.Text = "Next";
-            this.NextButton.UseVisualStyleBackColor = false;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -262,17 +286,6 @@
             this.label8.Size = new System.Drawing.Size(372, 28);
             this.label8.TabIndex = 30;
             this.label8.Text = "________________________";
-            // 
-            // eduListBox
-            // 
-            this.eduListBox.BackColor = System.Drawing.SystemColors.Highlight;
-            this.eduListBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.eduListBox.FormattingEnabled = true;
-            this.eduListBox.ItemHeight = 22;
-            this.eduListBox.Location = new System.Drawing.Point(0, 126);
-            this.eduListBox.Name = "eduListBox";
-            this.eduListBox.Size = new System.Drawing.Size(518, 224);
-            this.eduListBox.TabIndex = 30;
             // 
             // SaveButton
             // 
@@ -286,19 +299,6 @@
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
-            // 
-            // BackButton
-            // 
-            this.BackButton.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.BackButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackButton.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.BackButton.Location = new System.Drawing.Point(42, 542);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(106, 41);
-            this.BackButton.TabIndex = 32;
-            this.BackButton.Text = "Back";
-            this.BackButton.UseVisualStyleBackColor = false;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // Educational_Background
             // 

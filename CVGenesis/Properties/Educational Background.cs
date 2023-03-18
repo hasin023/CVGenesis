@@ -22,6 +22,7 @@ namespace CVGenesis.Properties
 
         }
 
+        public int count = 1;
         private void label4_Click(object sender, EventArgs e)
         {
 
@@ -38,8 +39,10 @@ namespace CVGenesis.Properties
 
             using (StreamWriter sw = System.IO.File.AppendText(newUser))
             {
-                string s = $"{degreeTextBox.Text},{InstitutionTextBox.Text},{SubjectComboBox.Text},{yearTextBox.Text},{resultTextBox.Text}";
+                string s = $"" +
+                    $"{count}.{degreeTextBox.Text},{InstitutionTextBox.Text},{SubjectComboBox.Text},{yearTextBox.Text},{resultTextBox.Text}";
                 sw.WriteLine(s);
+                count++;
             }
 
         }

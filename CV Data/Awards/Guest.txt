@@ -1,2 +1,2 @@
-aassss,qqqqqqa,aaaaaa,12-1-12
-sssss,sssss,aaaa,21-6-1922
+1.Hackathon,Coderush,IUT,26-7-1928
+2.CTF,Coderush,IUT,26-7-1928

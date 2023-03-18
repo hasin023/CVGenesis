@@ -14,6 +14,7 @@ namespace CVGenesis
 {
     public partial class Training : Form
     {
+        public int count = 1;
         public Training()
         {
             InitializeComponent();
@@ -57,8 +58,9 @@ namespace CVGenesis
 
             using (StreamWriter sw = System.IO.File.AppendText(newUser))
             {
-                string s = $"{titleTextBox.Text},{OrgTextBox.Text},{dateComboBox1.Text+"-"+monthComboBox1.Text+"-"+yearComboBox1.Text},{dateComboBox2.Text + "-" + monthComboBox2.Text + "-" + yearComboBox2.Text}";
+                string s = $"{count}.{titleTextBox.Text},{OrgTextBox.Text},{dateComboBox1.Text+"-"+monthComboBox1.Text+"-"+yearComboBox1.Text},{dateComboBox2.Text + "-" + monthComboBox2.Text + "-" + yearComboBox2.Text}";
                 sw.WriteLine(s);
+                count++;
             }
         }
         private void addButton_Click(object sender, EventArgs e)

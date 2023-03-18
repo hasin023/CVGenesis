@@ -13,6 +13,7 @@ namespace CVGenesis
 {
     public partial class Work_Experience : Form
     {
+        public int count = 1;
         public Work_Experience()
         {
             InitializeComponent();
@@ -38,8 +39,9 @@ namespace CVGenesis
 
             using (StreamWriter sw = System.IO.File.AppendText(newUser))
             {
-                string s = $"{occupationTextBox.Text},{employeerTextBox.Text},{countryComboBox.Text},{dateComboBox1.Text + "-" + monthComboBox1.Text + "-" + yearComboBox1.Text},{dateComboBox2.Text + "-" + monthComboBox2.Text + "-" + yearComboBox2.Text}";
+                string s = $"{count}.{occupationTextBox.Text},{employeerTextBox.Text},{countryComboBox.Text},{dateComboBox1.Text + "-" + monthComboBox1.Text + "-" + yearComboBox1.Text},{dateComboBox2.Text + "-" + monthComboBox2.Text + "-" + yearComboBox2.Text}";
                 sw.WriteLine(s);
+                count++;
             }
 
         }

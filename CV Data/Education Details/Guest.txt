@@ -1,3 +1,3 @@
-bsc,iut,Business,2111,11
-bsc,iuttt,English language,2111,11
-bsc,iuttt,Psychology,2111,11
+1.SSC,BNMPC,Science,2019,5.00
+2.HSC,NDC,Science,2021,5.00
+3.Bsc,IUT,Computer science,2026,4.00
