@@ -54,8 +54,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Educational Background.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Educational Background.Designer.cs">
+      <DependentUpon>Educational Background.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\signup.Designer.cs">
+      <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Training.Designer.cs">
+      <DependentUpon>Training.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Educational Background.resx">
+      <DependentUpon>Educational Background.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Intro.resx">
       <DependentUpon>Intro.cs</DependentUpon>
@@ -75,6 +96,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Properties\signup.resx">
+      <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Training.resx">
+      <DependentUpon>Training.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
