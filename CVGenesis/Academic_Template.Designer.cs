@@ -256,7 +256,7 @@
             this.toLabel4.BackColor = System.Drawing.Color.Transparent;
             this.toLabel4.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toLabel4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toLabel4.Location = new System.Drawing.Point(659, 759);
+            this.toLabel4.Location = new System.Drawing.Point(661, 759);
             this.toLabel4.Name = "toLabel4";
             this.toLabel4.Size = new System.Drawing.Size(30, 22);
             this.toLabel4.TabIndex = 106;
@@ -269,7 +269,7 @@
             this.fromLabel4.BackColor = System.Drawing.Color.Transparent;
             this.fromLabel4.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fromLabel4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.fromLabel4.Location = new System.Drawing.Point(559, 759);
+            this.fromLabel4.Location = new System.Drawing.Point(557, 759);
             this.fromLabel4.Name = "fromLabel4";
             this.fromLabel4.Size = new System.Drawing.Size(78, 22);
             this.fromLabel4.TabIndex = 105;
@@ -317,7 +317,7 @@
             this.toLabel3.BackColor = System.Drawing.Color.Transparent;
             this.toLabel3.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toLabel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toLabel3.Location = new System.Drawing.Point(657, 691);
+            this.toLabel3.Location = new System.Drawing.Point(659, 691);
             this.toLabel3.Name = "toLabel3";
             this.toLabel3.Size = new System.Drawing.Size(30, 22);
             this.toLabel3.TabIndex = 101;
@@ -330,7 +330,7 @@
             this.fromLabel3.BackColor = System.Drawing.Color.Transparent;
             this.fromLabel3.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fromLabel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.fromLabel3.Location = new System.Drawing.Point(556, 691);
+            this.fromLabel3.Location = new System.Drawing.Point(554, 691);
             this.fromLabel3.Name = "fromLabel3";
             this.fromLabel3.Size = new System.Drawing.Size(78, 22);
             this.fromLabel3.TabIndex = 100;
@@ -939,7 +939,7 @@
             this.firstnameLabel.BackColor = System.Drawing.Color.Transparent;
             this.firstnameLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstnameLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.firstnameLabel.Location = new System.Drawing.Point(93, 214);
+            this.firstnameLabel.Location = new System.Drawing.Point(80, 214);
             this.firstnameLabel.Name = "firstnameLabel";
             this.firstnameLabel.Size = new System.Drawing.Size(137, 28);
             this.firstnameLabel.TabIndex = 2;
