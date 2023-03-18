@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace CVGenesis
 {
@@ -308,9 +311,33 @@ namespace CVGenesis
                 }
             }
 
+        }
 
 
+        private static void SaveScreenshot(Form frm)
+        {
+            string imagePath = string.Format($@"C:\Hackathon\CVGenesis\Export\Academic_{GlobalUser._username}.png");
+            string pdfPath = string.Format($@"C:\Hackathon\CVGenesis\Export\Academic_{GlobalUser._username}.pdf");
+            Bitmap Image = new Bitmap(frm.Width, frm.Height);
+            frm.DrawToBitmap(Image, new System.Drawing.Rectangle(0, 0, frm.Width, frm.Height));
+            Image.Save(imagePath, System.Drawing.Imaging.ImageFormat.Png);
+        }
 
+        public static void CreatePDF(string fileToCreate, string pngFileName)
+        {
+            Document doc = new Document();
+            PdfWriter.GetInstance(doc, new FileStream(fileToCreate, FileMode.Create));
+            doc.Open();
+            iTextSharp.text.Image png = iTextSharp.text.Image.GetInstance(pngFileName);
+            png.SetAbsolutePosition(0, 0);
+            doc.Add(png);
+            doc.Close();
+        }
+        private void pdfButton_Click(object sender, EventArgs e)
+        {
+            pdfButton.Hide();
+            SaveScreenshot(this);
+            CreatePDF($@"C:\Hackathon\CVGenesis\Export\Academic_{GlobalUser._username}.pdf", $@"C:\Hackathon\CVGenesis\Export\Academic_{GlobalUser._username}.png");
         }
 
         private void label57_Click(object sender, EventArgs e)
@@ -331,6 +358,57 @@ namespace CVGenesis
         private void toLabel4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Academic_Template_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quaLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void orgLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fromLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quaLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void orgLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void formLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new Preview().Show();
         }
     }
 }

@@ -20,3 +20,7 @@ C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Skills.resources
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Academic_Template.resources
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Preview.resources
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Professional_Template.resources
+C:\Hackathon\CVGenesis\CVGenesis\bin\Debug\BouncyCastle.Crypto.dll
+C:\Hackathon\CVGenesis\CVGenesis\bin\Debug\itextsharp.dll
+C:\Hackathon\CVGenesis\CVGenesis\bin\Debug\itextsharp.xml
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.CopyComplete

@@ -1,0 +1,10 @@
+FirstName:Adid
+LastName:Shzid
+Email:adid@gmail.com
+Phone:01960405298
+Address:Mirpur
+POB:Uttara
+Gender:Male
+Nationality:Bangladeshi
+Marital:Unmarried
+DOB:21-6-1915
