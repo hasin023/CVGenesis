@@ -187,10 +187,10 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Font = new System.Drawing.Font("Mistral", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(415, 13);
+            this.panel1.Location = new System.Drawing.Point(415, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(373, 756);
+            this.panel1.Size = new System.Drawing.Size(373, 770);
             this.panel1.TabIndex = 51;
             // 
             // button1

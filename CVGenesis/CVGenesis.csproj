@@ -52,6 +52,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Honours_Awards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Honours_Awards.Designer.cs">
+      <DependentUpon>Honours_Awards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personal Detail.cs" />
+    <Compile Include="Personal Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personal Details.Designer.cs">
+      <DependentUpon>Personal Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Educational Background.cs">
@@ -72,8 +85,20 @@
     <Compile Include="Training.Designer.cs">
       <DependentUpon>Training.cs</DependentUpon>
     </Compile>
+    <Compile Include="Work Experience.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work Experience.Designer.cs">
+      <DependentUpon>Work Experience.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Honours_Awards.resx">
+      <DependentUpon>Honours_Awards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personal Details.resx">
+      <DependentUpon>Personal Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Educational Background.resx">
       <DependentUpon>Educational Background.cs</DependentUpon>
@@ -101,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Training.resx">
       <DependentUpon>Training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work Experience.resx">
+      <DependentUpon>Work Experience.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
