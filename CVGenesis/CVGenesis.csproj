@@ -46,12 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Degree.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GlobalUser.cs" />
     <Compile Include="Honours_Awards.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +80,12 @@
     </Compile>
     <Compile Include="Properties\signup.Designer.cs">
       <DependentUpon>signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Skills.Designer.cs">
+      <DependentUpon>Skills.cs</DependentUpon>
     </Compile>
     <Compile Include="Training.cs">
       <SubType>Form</SubType>
@@ -123,6 +131,9 @@
     </Compile>
     <EmbeddedResource Include="Properties\signup.resx">
       <DependentUpon>signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skills.resx">
+      <DependentUpon>Skills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Training.resx">
       <DependentUpon>Training.cs</DependentUpon>

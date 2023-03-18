@@ -21,5 +21,22 @@ namespace CVGenesis.Properties
         {
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new Login().Show();
+        }
+
+        private void createCVButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new signup().Show();
+        }
     }
 }
