@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Skills));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.skillListBox = new System.Windows.Forms.ListBox();
             this.skipButton = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -43,7 +44,6 @@
             this.otherSkillTextBox = new System.Windows.Forms.TextBox();
             this.saveOther = new System.Windows.Forms.Button();
             this.addOther = new System.Windows.Forms.Button();
-            this.skillListBox = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +61,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(514, 787);
             this.panel1.TabIndex = 52;
+            // 
+            // skillListBox
+            // 
+            this.skillListBox.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.skillListBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.skillListBox.FormattingEnabled = true;
+            this.skillListBox.ItemHeight = 22;
+            this.skillListBox.Location = new System.Drawing.Point(0, 152);
+            this.skillListBox.Name = "skillListBox";
+            this.skillListBox.Size = new System.Drawing.Size(511, 224);
+            this.skillListBox.TabIndex = 32;
             // 
             // skipButton
             // 
@@ -138,6 +149,68 @@
             // 
             this.langComboBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.langComboBox.FormattingEnabled = true;
+            this.langComboBox.Items.AddRange(new object[] {
+            "English",
+            "Spanish",
+            "French",
+            "German",
+            "Italian",
+            "Chinese (Mandarin)",
+            "Japanese",
+            "Korean",
+            "Arabic",
+            "Portuguese",
+            "Russian",
+            "Hindi",
+            "Bengali",
+            "Punjabi",
+            "Urdu",
+            "Turkish",
+            "Dutch",
+            "Polish",
+            "Swedish",
+            "Norwegian",
+            "Danish",
+            "Finnish",
+            "Greek",
+            "Hebrew",
+            "Thai",
+            "Indonesian",
+            "Malay",
+            "Vietnamese",
+            "Tagalog (Filipino)",
+            "Swahili",
+            "Romanian",
+            "Czech",
+            "Slovak",
+            "Hungarian",
+            "Bulgarian",
+            "Serbian",
+            "Croatian",
+            "Slovenian",
+            "Macedonian",
+            "Ukrainian",
+            "Belarusian",
+            "Latvian",
+            "Lithuanian",
+            "Estonian",
+            "Icelandic",
+            "Gaelic (Irish)",
+            "Welsh",
+            "Scots Gaelic",
+            "Basque",
+            "Catalan",
+            "Galician",
+            "Tamil",
+            "Telugu",
+            "Kannada",
+            "Malayalam",
+            "Marathi",
+            "Gujarati",
+            "Oriya (Odia)",
+            "Assamese",
+            "Kashmiri",
+            "Sindhi"});
             this.langComboBox.Location = new System.Drawing.Point(8, 176);
             this.langComboBox.Name = "langComboBox";
             this.langComboBox.Size = new System.Drawing.Size(244, 24);
@@ -147,6 +220,22 @@
             // 
             this.digitalComboBox.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.digitalComboBox.FormattingEnabled = true;
+            this.digitalComboBox.Items.AddRange(new object[] {
+            "Basic computer literacy",
+            "Word processing",
+            "Spreadsheets",
+            "Presentation software",
+            "Email management",
+            "Social media management",
+            "Search engine optimization and search engine marketing",
+            "Graphic design",
+            "Video editing",
+            "Website development",
+            "Mobile app development",
+            "Cloud computing",
+            "Data analytics and data visualization",
+            "Digital marketing",
+            "Cybersecurity"});
             this.digitalComboBox.Location = new System.Drawing.Point(8, 291);
             this.digitalComboBox.Name = "digitalComboBox";
             this.digitalComboBox.Size = new System.Drawing.Size(244, 24);
@@ -212,17 +301,6 @@
             this.addOther.Text = "Add";
             this.addOther.UseVisualStyleBackColor = false;
             this.addOther.Click += new System.EventHandler(this.addOther_Click);
-            // 
-            // skillListBox
-            // 
-            this.skillListBox.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.skillListBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skillListBox.FormattingEnabled = true;
-            this.skillListBox.ItemHeight = 22;
-            this.skillListBox.Location = new System.Drawing.Point(0, 152);
-            this.skillListBox.Name = "skillListBox";
-            this.skillListBox.Size = new System.Drawing.Size(511, 224);
-            this.skillListBox.TabIndex = 32;
             // 
             // Skills
             // 

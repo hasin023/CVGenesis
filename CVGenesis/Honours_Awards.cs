@@ -13,6 +13,7 @@ namespace CVGenesis
 {
     public partial class Honours_Awards : Form
     {
+        public int count = 1;
         public Honours_Awards()
         {
             InitializeComponent();
@@ -27,8 +28,9 @@ namespace CVGenesis
 
             using (StreamWriter sw = System.IO.File.AppendText(newUser))
             {
-                string s = $"{titleTextBox.Text},{eventTextBox.Text},{awardTextBox.Text},{dateComboBox1.Text + "-" + monthComboBox1.Text + "-" + yearComboBox1.Text}";
+                string s = $"{count}.{titleTextBox.Text},{eventTextBox.Text},{awardTextBox.Text},{dateComboBox1.Text + "-" + monthComboBox1.Text + "-" + yearComboBox1.Text}";
                 sw.WriteLine(s);
+                count++;
             }
 
         }

@@ -1,2 +1,2 @@
-rbv,fbgb,Afghanistan,1-5-1904,25-5-1923
-rbv,fbgb,Benin,1-5-1904,25-5-1923
+1.teacher,iut,Afghanistan,7-6-1907,25-5-1919
+2.teacher,brack,Australia,7-6-1907,25-5-1919
