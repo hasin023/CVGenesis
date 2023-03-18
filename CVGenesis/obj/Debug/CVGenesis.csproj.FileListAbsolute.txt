@@ -1,0 +1,11 @@
+C:\Hackathon\CVGenesis\CVGenesis\bin\Debug\CVGenesis.exe.config
+C:\Hackathon\CVGenesis\CVGenesis\bin\Debug\CVGenesis.exe
+C:\Hackathon\CVGenesis\CVGenesis\bin\Debug\CVGenesis.pdb
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.AssemblyReference.cache
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.SuggestedBindingRedirects.cache
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.CVGenesis.resources
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Properties.Resources.resources
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.GenerateResource.cache
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.CoreCompileInputs.cache
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.exe
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.pdb
