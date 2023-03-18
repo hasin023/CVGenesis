@@ -32,21 +32,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.titleTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.eventTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.awardTextBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dateComboBox1 = new System.Windows.Forms.ComboBox();
+            this.monthComboBox1 = new System.Windows.Forms.ComboBox();
+            this.yearComboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.nextButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Loginbutton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.skipButton = new System.Windows.Forms.Button();
+            this.awardsListBox = new System.Windows.Forms.ListBox();
+            this.addButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -81,22 +82,22 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(2, 149);
+            this.label6.Location = new System.Drawing.Point(18, 150);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 22);
             this.label6.TabIndex = 41;
             this.label6.Text = "Title";
             // 
-            // textBox1
+            // titleTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox1.Location = new System.Drawing.Point(6, 187);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 28);
-            this.textBox1.TabIndex = 42;
+            this.titleTextBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.titleTextBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleTextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.titleTextBox.Location = new System.Drawing.Point(22, 188);
+            this.titleTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.titleTextBox.Name = "titleTextBox";
+            this.titleTextBox.Size = new System.Drawing.Size(244, 28);
+            this.titleTextBox.TabIndex = 42;
             // 
             // label2
             // 
@@ -104,22 +105,22 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(2, 241);
+            this.label2.Location = new System.Drawing.Point(18, 242);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 22);
             this.label2.TabIndex = 43;
             this.label2.Text = "Event";
             // 
-            // textBox2
+            // eventTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox2.Location = new System.Drawing.Point(6, 280);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(244, 28);
-            this.textBox2.TabIndex = 44;
+            this.eventTextBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.eventTextBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eventTextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.eventTextBox.Location = new System.Drawing.Point(22, 281);
+            this.eventTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.eventTextBox.Name = "eventTextBox";
+            this.eventTextBox.Size = new System.Drawing.Size(244, 28);
+            this.eventTextBox.TabIndex = 44;
             // 
             // label3
             // 
@@ -127,22 +128,22 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(2, 342);
+            this.label3.Location = new System.Drawing.Point(18, 343);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(185, 22);
             this.label3.TabIndex = 45;
             this.label3.Text = "Awarding institution";
             // 
-            // textBox3
+            // awardTextBox
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox3.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox3.Location = new System.Drawing.Point(6, 387);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(244, 28);
-            this.textBox3.TabIndex = 46;
+            this.awardTextBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.awardTextBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.awardTextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.awardTextBox.Location = new System.Drawing.Point(22, 388);
+            this.awardTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.awardTextBox.Name = "awardTextBox";
+            this.awardTextBox.Size = new System.Drawing.Size(244, 28);
+            this.awardTextBox.TabIndex = 46;
             // 
             // label5
             // 
@@ -150,60 +151,232 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Location = new System.Drawing.Point(2, 453);
+            this.label5.Location = new System.Drawing.Point(18, 454);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 22);
             this.label5.TabIndex = 47;
             this.label5.Text = "Date of Award";
             // 
-            // comboBox2
+            // dateComboBox1
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(6, 497);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(89, 24);
-            this.comboBox2.TabIndex = 48;
+            this.dateComboBox1.FormattingEnabled = true;
+            this.dateComboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.dateComboBox1.Location = new System.Drawing.Point(22, 498);
+            this.dateComboBox1.Name = "dateComboBox1";
+            this.dateComboBox1.Size = new System.Drawing.Size(89, 24);
+            this.dateComboBox1.TabIndex = 48;
             // 
-            // comboBox3
+            // monthComboBox1
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(101, 497);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(89, 24);
-            this.comboBox3.TabIndex = 49;
+            this.monthComboBox1.FormattingEnabled = true;
+            this.monthComboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.monthComboBox1.Location = new System.Drawing.Point(117, 498);
+            this.monthComboBox1.Name = "monthComboBox1";
+            this.monthComboBox1.Size = new System.Drawing.Size(89, 24);
+            this.monthComboBox1.TabIndex = 49;
             // 
-            // comboBox1
+            // yearComboBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(196, 497);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(89, 24);
-            this.comboBox1.TabIndex = 50;
+            this.yearComboBox1.FormattingEnabled = true;
+            this.yearComboBox1.Items.AddRange(new object[] {
+            "1900",
+            "1901",
+            "1902",
+            "1903",
+            "1904",
+            "1905",
+            "1906",
+            "1907",
+            "1908",
+            "1909",
+            "1910",
+            "1911",
+            "1912",
+            "1913",
+            "1914",
+            "1915",
+            "1916",
+            "1917",
+            "1918",
+            "1919",
+            "1920",
+            "1921",
+            "1922",
+            "1923",
+            "1924",
+            "1925",
+            "1926",
+            "1927",
+            "1928",
+            "1929",
+            "1930",
+            "1931",
+            "1932",
+            "1933",
+            "1934",
+            "1935",
+            "1936",
+            "1937",
+            "1938",
+            "1939",
+            "1940",
+            "1941",
+            "1942",
+            "1943",
+            "1944",
+            "1945",
+            "1946",
+            "1947",
+            "1948",
+            "1949",
+            "1950",
+            "1951",
+            "1952",
+            "1953",
+            "1954",
+            "1955",
+            "1956",
+            "1957",
+            "1958",
+            "1959",
+            "1960",
+            "1961",
+            "1962",
+            "1963",
+            "1964",
+            "1965",
+            "1966",
+            "1967",
+            "1968",
+            "1969",
+            "1970",
+            "1971",
+            "1972",
+            "1973",
+            "1974",
+            "1975",
+            "1976",
+            "1977",
+            "1978",
+            "1979",
+            "1980",
+            "1981",
+            "1982",
+            "1983",
+            "1984",
+            "1985",
+            "1986",
+            "1987",
+            "1988",
+            "1989",
+            "1990",
+            "1991",
+            "1992",
+            "1993",
+            "1994",
+            "1995",
+            "1996",
+            "1997",
+            "1998",
+            "1999",
+            "2000",
+            "2001",
+            "2002",
+            "2003",
+            "2004",
+            "2005",
+            "2006",
+            "2007",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+            "2023"});
+            this.yearComboBox1.Location = new System.Drawing.Point(214, 498);
+            this.yearComboBox1.Name = "yearComboBox1";
+            this.yearComboBox1.Size = new System.Drawing.Size(89, 24);
+            this.yearComboBox1.TabIndex = 50;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.awardsListBox);
+            this.panel1.Controls.Add(this.skipButton);
+            this.panel1.Controls.Add(this.nextButton);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Font = new System.Drawing.Font("Mistral", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(415, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(373, 770);
+            this.panel1.Size = new System.Drawing.Size(519, 770);
             this.panel1.TabIndex = 51;
             // 
-            // button1
+            // nextButton
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Location = new System.Drawing.Point(198, 551);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 41);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = false;
+            this.nextButton.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.nextButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextButton.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.nextButton.Location = new System.Drawing.Point(348, 551);
+            this.nextButton.Name = "nextButton";
+            this.nextButton.Size = new System.Drawing.Size(106, 41);
+            this.nextButton.TabIndex = 30;
+            this.nextButton.Text = "Next";
+            this.nextButton.UseVisualStyleBackColor = false;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // pictureBox1
             // 
@@ -214,64 +387,79 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // Loginbutton
+            // saveButton
             // 
-            this.Loginbutton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.Loginbutton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loginbutton.ForeColor = System.Drawing.Color.Transparent;
-            this.Loginbutton.Location = new System.Drawing.Point(6, 564);
-            this.Loginbutton.Name = "Loginbutton";
-            this.Loginbutton.Size = new System.Drawing.Size(117, 49);
-            this.Loginbutton.TabIndex = 52;
-            this.Loginbutton.Text = "Add more";
-            this.Loginbutton.UseVisualStyleBackColor = false;
+            this.saveButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.saveButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButton.ForeColor = System.Drawing.Color.Transparent;
+            this.saveButton.Location = new System.Drawing.Point(241, 595);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(117, 49);
+            this.saveButton.TabIndex = 53;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = false;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // button2
+            // skipButton
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Location = new System.Drawing.Point(227, 564);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 49);
-            this.button2.TabIndex = 53;
-            this.button2.Text = "Save";
-            this.button2.UseVisualStyleBackColor = false;
+            this.skipButton.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.skipButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.skipButton.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.skipButton.Location = new System.Drawing.Point(37, 551);
+            this.skipButton.Name = "skipButton";
+            this.skipButton.Size = new System.Drawing.Size(106, 41);
+            this.skipButton.TabIndex = 31;
+            this.skipButton.Text = "Back";
+            this.skipButton.UseVisualStyleBackColor = false;
+            this.skipButton.Click += new System.EventHandler(this.skipButton_Click);
             // 
-            // button3
+            // awardsListBox
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button3.Location = new System.Drawing.Point(37, 551);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 41);
-            this.button3.TabIndex = 31;
-            this.button3.Text = "Skip";
-            this.button3.UseVisualStyleBackColor = false;
+            this.awardsListBox.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.awardsListBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.awardsListBox.FormattingEnabled = true;
+            this.awardsListBox.ItemHeight = 22;
+            this.awardsListBox.Location = new System.Drawing.Point(0, 193);
+            this.awardsListBox.Name = "awardsListBox";
+            this.awardsListBox.Size = new System.Drawing.Size(518, 224);
+            this.awardsListBox.TabIndex = 58;
+            // 
+            // addButton
+            // 
+            this.addButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.addButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.ForeColor = System.Drawing.Color.Transparent;
+            this.addButton.Location = new System.Drawing.Point(33, 595);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(117, 49);
+            this.addButton.TabIndex = 54;
+            this.addButton.Text = "Add";
+            this.addButton.UseVisualStyleBackColor = false;
+            this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
             // Honours_Awards
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 753);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.Loginbutton);
+            this.ClientSize = new System.Drawing.Size(934, 753);
+            this.Controls.Add(this.addButton);
+            this.Controls.Add(this.saveButton);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.yearComboBox1);
+            this.Controls.Add(this.monthComboBox1);
+            this.Controls.Add(this.dateComboBox1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.awardTextBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.eventTextBox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.titleTextBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Honours_Awards";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Honours_Awards";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -285,20 +473,21 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox titleTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox eventTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox awardTextBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox dateComboBox1;
+        private System.Windows.Forms.ComboBox monthComboBox1;
+        private System.Windows.Forms.ComboBox yearComboBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button nextButton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button Loginbutton;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button skipButton;
+        private System.Windows.Forms.ListBox awardsListBox;
+        private System.Windows.Forms.Button addButton;
     }
 }
