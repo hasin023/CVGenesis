@@ -242,7 +242,7 @@
             this.guestLinkLabel.AutoSize = true;
             this.guestLinkLabel.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guestLinkLabel.LinkColor = System.Drawing.SystemColors.Highlight;
-            this.guestLinkLabel.Location = new System.Drawing.Point(490, 644);
+            this.guestLinkLabel.Location = new System.Drawing.Point(478, 644);
             this.guestLinkLabel.Name = "guestLinkLabel";
             this.guestLinkLabel.Size = new System.Drawing.Size(170, 22);
             this.guestLinkLabel.TabIndex = 22;

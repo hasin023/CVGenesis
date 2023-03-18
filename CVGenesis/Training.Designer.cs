@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Training));
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,12 +46,13 @@
             this.yearComboBox2 = new System.Windows.Forms.ComboBox();
             this.addButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.trainingListBox = new System.Windows.Forms.ListBox();
+            this.backButton = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.skipButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
-            this.backButton = new System.Windows.Forms.Button();
-            this.trainingListBox = new System.Windows.Forms.ListBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -101,6 +103,7 @@
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(232, 28);
             this.titleTextBox.TabIndex = 20;
+            this.toolTip1.SetToolTip(this.titleTextBox, "Include your online-offline training or workshops");
             // 
             // label2
             // 
@@ -564,15 +567,29 @@
             this.panel1.Size = new System.Drawing.Size(520, 756);
             this.panel1.TabIndex = 32;
             // 
-            // pictureBox1
+            // trainingListBox
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(444, 20);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 45);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.trainingListBox.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.trainingListBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.trainingListBox.FormattingEnabled = true;
+            this.trainingListBox.ItemHeight = 22;
+            this.trainingListBox.Location = new System.Drawing.Point(0, 124);
+            this.trainingListBox.Name = "trainingListBox";
+            this.trainingListBox.Size = new System.Drawing.Size(518, 224);
+            this.trainingListBox.TabIndex = 56;
+            // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.backButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.backButton.Location = new System.Drawing.Point(68, 462);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(106, 41);
+            this.backButton.TabIndex = 31;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // nextButton
             // 
@@ -586,6 +603,16 @@
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = false;
             this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(444, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(63, 45);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // skipButton
             // 
@@ -612,30 +639,6 @@
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = false;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
-            // 
-            // backButton
-            // 
-            this.backButton.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.backButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.backButton.Location = new System.Drawing.Point(68, 462);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(106, 41);
-            this.backButton.TabIndex = 31;
-            this.backButton.Text = "Back";
-            this.backButton.UseVisualStyleBackColor = false;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
-            // 
-            // trainingListBox
-            // 
-            this.trainingListBox.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.trainingListBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.trainingListBox.FormattingEnabled = true;
-            this.trainingListBox.ItemHeight = 22;
-            this.trainingListBox.Location = new System.Drawing.Point(0, 124);
-            this.trainingListBox.Name = "trainingListBox";
-            this.trainingListBox.Size = new System.Drawing.Size(518, 224);
-            this.trainingListBox.TabIndex = 56;
             // 
             // Training
             // 
@@ -695,5 +698,6 @@
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.ListBox trainingListBox;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Work_Experience));
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.workExpListBox = new System.Windows.Forms.ListBox();
+            this.backButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,8 +53,7 @@
             this.yearComboBox2 = new System.Windows.Forms.ComboBox();
             this.addButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
-            this.backButton = new System.Windows.Forms.Button();
-            this.workExpListBox = new System.Windows.Forms.ListBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -94,6 +96,30 @@
             this.panel1.Size = new System.Drawing.Size(525, 756);
             this.panel1.TabIndex = 33;
             // 
+            // workExpListBox
+            // 
+            this.workExpListBox.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.workExpListBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.workExpListBox.FormattingEnabled = true;
+            this.workExpListBox.ItemHeight = 22;
+            this.workExpListBox.Location = new System.Drawing.Point(1, 145);
+            this.workExpListBox.Name = "workExpListBox";
+            this.workExpListBox.Size = new System.Drawing.Size(518, 224);
+            this.workExpListBox.TabIndex = 57;
+            // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.backButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.backButton.Location = new System.Drawing.Point(59, 543);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(106, 41);
+            this.backButton.TabIndex = 32;
+            this.backButton.Text = "Back";
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -110,7 +136,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(301, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(445, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(63, 45);
             this.pictureBox1.TabIndex = 4;
@@ -138,6 +164,7 @@
             this.occupationTextBox.Name = "occupationTextBox";
             this.occupationTextBox.Size = new System.Drawing.Size(244, 28);
             this.occupationTextBox.TabIndex = 35;
+            this.toolTip1.SetToolTip(this.occupationTextBox, "Include your designation at the organization");
             // 
             // label2
             // 
@@ -161,6 +188,7 @@
             this.employeerTextBox.Name = "employeerTextBox";
             this.employeerTextBox.Size = new System.Drawing.Size(244, 28);
             this.employeerTextBox.TabIndex = 37;
+            this.toolTip1.SetToolTip(this.employeerTextBox, "Include the Organization\r\n");
             // 
             // label3
             // 
@@ -819,30 +847,6 @@
             this.saveButton.UseVisualStyleBackColor = false;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // backButton
-            // 
-            this.backButton.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.backButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backButton.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.backButton.Location = new System.Drawing.Point(59, 543);
-            this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(106, 41);
-            this.backButton.TabIndex = 32;
-            this.backButton.Text = "Back";
-            this.backButton.UseVisualStyleBackColor = false;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
-            // 
-            // workExpListBox
-            // 
-            this.workExpListBox.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.workExpListBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.workExpListBox.FormattingEnabled = true;
-            this.workExpListBox.ItemHeight = 22;
-            this.workExpListBox.Location = new System.Drawing.Point(1, 145);
-            this.workExpListBox.Name = "workExpListBox";
-            this.workExpListBox.Size = new System.Drawing.Size(518, 224);
-            this.workExpListBox.TabIndex = 57;
-            // 
             // Work_Experience
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -903,5 +907,6 @@
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.ListBox workExpListBox;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

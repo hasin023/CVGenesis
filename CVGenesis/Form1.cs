@@ -97,5 +97,45 @@ namespace CVGenesis
 
             checkUser(userTextBox.Text);
         }
+
+        private void nameText_Enter(object sender, EventArgs e)
+        {
+            if(userTextBox.Text == "Username")
+            {
+                userTextBox.Text = "";
+
+                userTextBox.ForeColor= Color.Black;
+            }
+        }
+
+        private void nametext_leave(object sender, EventArgs e)
+        {
+            if (userTextBox.Text == "")
+            {
+                userTextBox.Text = "Username";
+
+                userTextBox.ForeColor = Color.Silver;
+            }
+        }
+
+        private void passEnter(object sender, EventArgs e)
+        {
+            if (passTextBox.Text == "Password")
+            {
+                passTextBox.Text = "";
+
+                passTextBox.ForeColor = Color.Black;
+            }
+        }
+
+        private void pass_leave(object sender, EventArgs e)
+        {
+            if (passTextBox.Text == "")
+            {
+                passTextBox.Text = "Password";
+
+                passTextBox.ForeColor = Color.Silver;
+            }
+        }
     }
 }

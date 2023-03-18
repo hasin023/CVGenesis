@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Preview));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.profCVButton = new System.Windows.Forms.Button();
             this.academicCVButton = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -105,7 +107,9 @@
             this.profCVButton.Name = "profCVButton";
             this.profCVButton.Size = new System.Drawing.Size(195, 68);
             this.profCVButton.TabIndex = 15;
-            this.profCVButton.Text = "Professional CV";
+            this.profCVButton.Text = "Industrial CV";
+            this.toolTip1.SetToolTip(this.profCVButton, "The industry resume is a document that highlights your \r\nskills and experience sp" +
+        "ecifically tailored to one job \r\nor type of work.");
             this.profCVButton.UseVisualStyleBackColor = false;
             this.profCVButton.Click += new System.EventHandler(this.profCVButton_Click);
             // 
@@ -119,6 +123,9 @@
             this.academicCVButton.Size = new System.Drawing.Size(195, 65);
             this.academicCVButton.TabIndex = 16;
             this.academicCVButton.Text = "Academic CV";
+            this.toolTip1.SetToolTip(this.academicCVButton, "The academic CV is a representation of you as an \r\nacademic and field expert. You" +
+        "r comprehensive \r\nlisting of experience serves to prove your \r\nscholarship and e" +
+        "xpertise.");
             this.academicCVButton.UseVisualStyleBackColor = false;
             this.academicCVButton.Click += new System.EventHandler(this.academicCVButton_Click);
             // 
@@ -151,5 +158,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button profCVButton;
         private System.Windows.Forms.Button academicCVButton;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
