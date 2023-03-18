@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ using System.Windows.Forms;
 using System.Xml.Linq;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
+using System.Drawing.Drawing2D;
 
 namespace CVGenesis
 {
@@ -35,43 +37,43 @@ namespace CVGenesis
             if (File.Exists(user))
             {
                 string[] users = File.ReadAllLines(user);
-                foreach(string u in users)
+                foreach (string u in users)
                 {
-                    if(u.Contains("FirstName:"))
+                    if (u.Contains("FirstName:"))
                     {
-                        firstnameLabel.Text = u.Remove(0,10);
+                        firstnameLabel.Text = u.Remove(0, 10);
                     }
-                    else if(u.Contains("LastName:"))
+                    else if (u.Contains("LastName:"))
                     {
-                        lastnameLabel.Text= u.Remove(0,9);
+                        lastnameLabel.Text = u.Remove(0, 9);
                     }
-                    else if(u.Contains("DOB:"))
+                    else if (u.Contains("DOB:"))
                     {
-                        DOBLabel.Text = u.Remove(0,4);
+                        DOBLabel.Text = u.Remove(0, 4);
                     }
-                    else if(u.Contains("POB:"))
+                    else if (u.Contains("POB:"))
                     {
-                        POBLabel.Text= u.Remove(0,4);
+                        POBLabel.Text = u.Remove(0, 4);
                     }
-                    else if(u.Contains("Nationality:"))
+                    else if (u.Contains("Nationality:"))
                     {
-                        nationLabel.Text = u.Remove(0,12);
+                        nationLabel.Text = u.Remove(0, 12);
                     }
-                    else if(u.Contains("Gender:"))
+                    else if (u.Contains("Gender:"))
                     {
                         genderLabel.Text = u.Remove(0, 7);
                     }
-                    else if(u.Contains("Address:"))
+                    else if (u.Contains("Address:"))
                     {
-                        addressLabel.Text= u.Remove(0, 8);
+                        addressLabel.Text = u.Remove(0, 8);
                     }
-                    else if(u.Contains("Email:"))
+                    else if (u.Contains("Email:"))
                     {
                         mailLabel.Text = u.Remove(0, 6);
                     }
-                    else if(u.Contains("Phone:"))
+                    else if (u.Contains("Phone:"))
                     {
-                        mobileLabel.Text = u.Remove(0,6);
+                        mobileLabel.Text = u.Remove(0, 6);
                     }
                 }
 
@@ -79,32 +81,32 @@ namespace CVGenesis
         }
         public void readEduData(string str)
         {
-           
+
             string user = $@"C:\Hackathon\CVGenesis\CV Data\Education Details\{str}.txt";
 
             if (File.Exists(user))
             {
                 string[] users = File.ReadAllLines(user);
 
-                foreach(string s in users) 
+                foreach (string s in users)
                 {
-                    if(s.Contains("1."))
+                    if (s.Contains("1."))
                     {
-                        s.Remove(0,2);
+                        s.Remove(0, 2);
                         string[] k = null;
                         k = s.Split(',');
-                    
+
                         degreeLabel1.Text = k[0];
                         InsLabel1.Text = k[1];
                         subLabel1.Text = k[2];
                         yearLabel1.Text = k[3];
                         resLabel1.Text = k[4];
                         publiLabel.Text = k[5];
-                        authorLabel.Text= k[6];
+                        authorLabel.Text = k[6];
                         dateLabel.Text = k[7];
                     }
 
-                   else  if (s.Contains("2."))
+                    else if (s.Contains("2."))
                     {
                         s.Remove(0, 2);
                         string[] k = null;
@@ -167,7 +169,7 @@ namespace CVGenesis
                         orgLabel.Text = k[1];
                         fromLabel.Text = k[2];
                         toLabel.Text = k[3];
-                        
+
 
                     }
 
@@ -181,11 +183,11 @@ namespace CVGenesis
                         orgLabel2.Text = k[1];
                         formLabel2.Text = k[2];
                         toLabel2.Text = k[3];
-                        
+
 
                     }
 
-                    
+
 
                 }
             }
@@ -265,7 +267,7 @@ namespace CVGenesis
                         eventLabel1.Text = k[1];
                         cinsLabel1.Text = k[2];
                         DOWLabel1.Text = k[3];
-                        
+
                     }
 
                     else if (s.Contains("2."))
@@ -278,7 +280,7 @@ namespace CVGenesis
                         eventLabel2.Text = k[1];
                         cinsLabel2.Text = k[2];
                         DOWLabel2.Text = k[3];
-                       
+
                     }
 
 
@@ -302,17 +304,17 @@ namespace CVGenesis
 
                 foreach (string s in users)
                 {
-                   
-                     
-                        string[] k = null;
-                        k = s.Split(',');
+
+
+                    string[] k = null;
+                    k = s.Split(',');
 
                     lanskillLabel.Text = k[0];
                     digitalskillLabel.Text = k[1];
                     otherskillLabel.Text = k[2];
-                        
 
-                   
+
+
 
 
 
@@ -343,6 +345,8 @@ namespace CVGenesis
         }
         private void pdfButton_Click(object sender, EventArgs e)
         {
+            selectButton1.Hide();
+            loadButton1.Hide();
             pdfButton.Hide();
             SaveScreenshot(this);
             CreatePDF($@"C:\Hackathon\CVGenesis\Export\Academic_{GlobalUser._username}.pdf", $@"C:\Hackathon\CVGenesis\Export\Academic_{GlobalUser._username}.png");
@@ -418,5 +422,44 @@ namespace CVGenesis
             this.Hide();
             new Preview().Show();
         }
+
+        private void label61_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        public string fileLocation;
+
+        private void selectButton1_Click(object sender, EventArgs e)
+        {
+            string filelocation = "";
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "Browse Image File";
+            fdlg.Filter = "Image Files (*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All Files(*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                filelocation = fdlg.FileName;
+            }
+
+            PictureClass._path = filelocation;
+        }
+
+        private void loadButton1_Click(object sender, EventArgs e)
+        {
+            if (PictureClass._path != "")
+            {
+                Properties.Settings.Default.FileString = PictureClass._path;
+                Properties.Settings.Default.Save();
+            }
+
+            System.Drawing.Image image = System.Drawing.Image.FromFile(Properties.Settings.Default.FileString);
+            this.pictureBox.Image = image;
+
+
+        }
+
     }
 }

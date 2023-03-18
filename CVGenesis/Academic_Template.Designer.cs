@@ -111,10 +111,14 @@
             this.label16 = new System.Windows.Forms.Label();
             this.degreeLabel2 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.selectButton1 = new System.Windows.Forms.Button();
+            this.loadButton1 = new System.Windows.Forms.Button();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // cinsLabel2
@@ -562,7 +566,7 @@
             this.label62.BackColor = System.Drawing.Color.Transparent;
             this.label62.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label62.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label62.Location = new System.Drawing.Point(19, 649);
+            this.label62.Location = new System.Drawing.Point(11, 687);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(125, 28);
             this.label62.TabIndex = 20;
@@ -586,11 +590,12 @@
             this.label61.BackColor = System.Drawing.Color.Transparent;
             this.label61.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label61.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label61.Location = new System.Drawing.Point(20, 521);
+            this.label61.Location = new System.Drawing.Point(12, 597);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(72, 28);
             this.label61.TabIndex = 19;
             this.label61.Text = "Skills";
+            this.label61.Click += new System.EventHandler(this.label61_Click);
             // 
             // genderLabel
             // 
@@ -598,7 +603,7 @@
             this.genderLabel.BackColor = System.Drawing.Color.Transparent;
             this.genderLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genderLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.genderLabel.Location = new System.Drawing.Point(122, 250);
+            this.genderLabel.Location = new System.Drawing.Point(105, 371);
             this.genderLabel.Name = "genderLabel";
             this.genderLabel.Size = new System.Drawing.Size(72, 22);
             this.genderLabel.TabIndex = 18;
@@ -610,7 +615,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label14.Location = new System.Drawing.Point(33, 249);
+            this.label14.Location = new System.Drawing.Point(16, 370);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(80, 22);
             this.label14.TabIndex = 17;
@@ -622,7 +627,7 @@
             this.mobileLabel.BackColor = System.Drawing.Color.Transparent;
             this.mobileLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mobileLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.mobileLabel.Location = new System.Drawing.Point(67, 460);
+            this.mobileLabel.Location = new System.Drawing.Point(57, 557);
             this.mobileLabel.Name = "mobileLabel";
             this.mobileLabel.Size = new System.Drawing.Size(100, 22);
             this.mobileLabel.TabIndex = 16;
@@ -631,7 +636,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(24, 458);
+            this.pictureBox3.Location = new System.Drawing.Point(14, 555);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(38, 36);
             this.pictureBox3.TabIndex = 15;
@@ -643,7 +648,7 @@
             this.mailLabel.BackColor = System.Drawing.Color.Transparent;
             this.mailLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mailLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.mailLabel.Location = new System.Drawing.Point(68, 412);
+            this.mailLabel.Location = new System.Drawing.Point(58, 509);
             this.mailLabel.Name = "mailLabel";
             this.mailLabel.Size = new System.Drawing.Size(141, 22);
             this.mailLabel.TabIndex = 14;
@@ -652,7 +657,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(23, 409);
+            this.pictureBox2.Location = new System.Drawing.Point(13, 506);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(39, 43);
             this.pictureBox2.TabIndex = 13;
@@ -664,7 +669,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label10.Location = new System.Drawing.Point(24, 304);
+            this.label10.Location = new System.Drawing.Point(11, 412);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(101, 28);
             this.label10.TabIndex = 12;
@@ -676,7 +681,7 @@
             this.addressLabel.BackColor = System.Drawing.Color.Transparent;
             this.addressLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addressLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.addressLabel.Location = new System.Drawing.Point(68, 361);
+            this.addressLabel.Location = new System.Drawing.Point(58, 458);
             this.addressLabel.Name = "addressLabel";
             this.addressLabel.Size = new System.Drawing.Size(79, 22);
             this.addressLabel.TabIndex = 11;
@@ -688,7 +693,7 @@
             this.POBLabel.BackColor = System.Drawing.Color.Transparent;
             this.POBLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.POBLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.POBLabel.Location = new System.Drawing.Point(169, 168);
+            this.POBLabel.Location = new System.Drawing.Point(149, 301);
             this.POBLabel.Name = "POBLabel";
             this.POBLabel.Size = new System.Drawing.Size(124, 22);
             this.POBLabel.TabIndex = 9;
@@ -700,7 +705,7 @@
             this.DOBLabel.BackColor = System.Drawing.Color.Transparent;
             this.DOBLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DOBLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.DOBLabel.Location = new System.Drawing.Point(169, 125);
+            this.DOBLabel.Location = new System.Drawing.Point(149, 265);
             this.DOBLabel.Name = "DOBLabel";
             this.DOBLabel.Size = new System.Drawing.Size(120, 22);
             this.DOBLabel.TabIndex = 8;
@@ -709,7 +714,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 359);
+            this.pictureBox1.Location = new System.Drawing.Point(14, 456);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 33);
             this.pictureBox1.TabIndex = 7;
@@ -721,7 +726,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label4.Location = new System.Drawing.Point(33, 168);
+            this.label4.Location = new System.Drawing.Point(13, 301);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 22);
             this.label4.TabIndex = 5;
@@ -733,7 +738,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(33, 125);
+            this.label3.Location = new System.Drawing.Point(13, 265);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 22);
             this.label3.TabIndex = 4;
@@ -742,6 +747,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(this.pictureBox);
+            this.panel1.Controls.Add(this.loadButton1);
+            this.panel1.Controls.Add(this.selectButton1);
             this.panel1.Controls.Add(this.dateLabel);
             this.panel1.Controls.Add(this.authorLabel);
             this.panel1.Controls.Add(this.backLinkLabel);
@@ -815,7 +823,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel8.Location = new System.Drawing.Point(24, 680);
+            this.panel8.Location = new System.Drawing.Point(16, 718);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(373, 1);
             this.panel8.TabIndex = 120;
@@ -839,7 +847,7 @@
             this.otherskillLabel.BackColor = System.Drawing.Color.Transparent;
             this.otherskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otherskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.otherskillLabel.Location = new System.Drawing.Point(20, 600);
+            this.otherskillLabel.Location = new System.Drawing.Point(13, 658);
             this.otherskillLabel.Name = "otherskillLabel";
             this.otherskillLabel.Size = new System.Drawing.Size(79, 22);
             this.otherskillLabel.TabIndex = 116;
@@ -851,7 +859,7 @@
             this.digitalskillLabel.BackColor = System.Drawing.Color.Transparent;
             this.digitalskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.digitalskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.digitalskillLabel.Location = new System.Drawing.Point(22, 557);
+            this.digitalskillLabel.Location = new System.Drawing.Point(12, 634);
             this.digitalskillLabel.Name = "digitalskillLabel";
             this.digitalskillLabel.Size = new System.Drawing.Size(79, 22);
             this.digitalskillLabel.TabIndex = 115;
@@ -875,7 +883,7 @@
             this.lanskillLabel.BackColor = System.Drawing.Color.Transparent;
             this.lanskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lanskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lanskillLabel.Location = new System.Drawing.Point(25, 691);
+            this.lanskillLabel.Location = new System.Drawing.Point(12, 722);
             this.lanskillLabel.Name = "lanskillLabel";
             this.lanskillLabel.Size = new System.Drawing.Size(79, 22);
             this.lanskillLabel.TabIndex = 112;
@@ -884,7 +892,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel7.Location = new System.Drawing.Point(23, 772);
+            this.panel7.Location = new System.Drawing.Point(17, 783);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(373, 1);
             this.panel7.TabIndex = 111;
@@ -895,7 +903,7 @@
             this.label63.BackColor = System.Drawing.Color.Transparent;
             this.label63.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label63.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label63.Location = new System.Drawing.Point(18, 741);
+            this.label63.Location = new System.Drawing.Point(12, 752);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(161, 28);
             this.label63.TabIndex = 110;
@@ -907,7 +915,7 @@
             this.nationLabel.BackColor = System.Drawing.Color.Transparent;
             this.nationLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nationLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.nationLabel.Location = new System.Drawing.Point(148, 209);
+            this.nationLabel.Location = new System.Drawing.Point(128, 335);
             this.nationLabel.Name = "nationLabel";
             this.nationLabel.Size = new System.Drawing.Size(103, 22);
             this.nationLabel.TabIndex = 10;
@@ -919,7 +927,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Location = new System.Drawing.Point(33, 209);
+            this.label5.Location = new System.Drawing.Point(13, 335);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 22);
             this.label5.TabIndex = 6;
@@ -931,7 +939,7 @@
             this.firstnameLabel.BackColor = System.Drawing.Color.Transparent;
             this.firstnameLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstnameLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.firstnameLabel.Location = new System.Drawing.Point(72, 44);
+            this.firstnameLabel.Location = new System.Drawing.Point(93, 214);
             this.firstnameLabel.Name = "firstnameLabel";
             this.firstnameLabel.Size = new System.Drawing.Size(137, 28);
             this.firstnameLabel.TabIndex = 2;
@@ -943,7 +951,7 @@
             this.lastnameLabel.BackColor = System.Drawing.Color.Transparent;
             this.lastnameLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastnameLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lastnameLabel.Location = new System.Drawing.Point(154, 44);
+            this.lastnameLabel.Location = new System.Drawing.Point(175, 214);
             this.lastnameLabel.Name = "lastnameLabel";
             this.lastnameLabel.Size = new System.Drawing.Size(135, 28);
             this.lastnameLabel.TabIndex = 3;
@@ -1103,6 +1111,41 @@
             this.label15.Size = new System.Drawing.Size(0, 35);
             this.label15.TabIndex = 67;
             // 
+            // selectButton1
+            // 
+            this.selectButton1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.selectButton1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectButton1.ForeColor = System.Drawing.Color.Transparent;
+            this.selectButton1.Location = new System.Drawing.Point(11, 14);
+            this.selectButton1.Name = "selectButton1";
+            this.selectButton1.Size = new System.Drawing.Size(106, 41);
+            this.selectButton1.TabIndex = 124;
+            this.selectButton1.Text = "Select";
+            this.selectButton1.UseVisualStyleBackColor = false;
+            this.selectButton1.Click += new System.EventHandler(this.selectButton1_Click);
+            // 
+            // loadButton1
+            // 
+            this.loadButton1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.loadButton1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadButton1.ForeColor = System.Drawing.Color.Transparent;
+            this.loadButton1.Location = new System.Drawing.Point(264, 14);
+            this.loadButton1.Name = "loadButton1";
+            this.loadButton1.Size = new System.Drawing.Size(106, 41);
+            this.loadButton1.TabIndex = 125;
+            this.loadButton1.Text = "Load";
+            this.loadButton1.UseVisualStyleBackColor = false;
+            this.loadButton1.Click += new System.EventHandler(this.loadButton1_Click);
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.Location = new System.Drawing.Point(120, 70);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(136, 115);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 126;
+            this.pictureBox.TabStop = false;
+            // 
             // Academic_Template
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1172,6 +1215,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1261,5 +1305,8 @@
         private System.Windows.Forms.LinkLabel backLinkLabel;
         private System.Windows.Forms.Label authorLabel;
         private System.Windows.Forms.Label dateLabel;
+        private System.Windows.Forms.Button selectButton1;
+        private System.Windows.Forms.Button loadButton1;
+        private System.Windows.Forms.PictureBox pictureBox;
     }
 }
