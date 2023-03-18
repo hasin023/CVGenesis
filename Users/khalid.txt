@@ -1,3 +1,3 @@
 username:khalid
 password:123456
-email:dge2
+email:khalid@gmail.com

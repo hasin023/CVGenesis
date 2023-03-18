@@ -1,0 +1,3 @@
+1.SSC,BNMPC,Science,2019,5.00,Book,Alam,20-6-2016
+2.HSC,NDC,Science,2021,5.00,Book,Alam,20-6-2016
+3.B.Sc,IUT,Science,2025,3.90,Book,Alam,20-6-2016

@@ -121,7 +121,7 @@
             this.firstnameLabel.BackColor = System.Drawing.Color.Transparent;
             this.firstnameLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstnameLabel.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.firstnameLabel.Location = new System.Drawing.Point(66, 221);
+            this.firstnameLabel.Location = new System.Drawing.Point(45, 221);
             this.firstnameLabel.Name = "firstnameLabel";
             this.firstnameLabel.Size = new System.Drawing.Size(137, 28);
             this.firstnameLabel.TabIndex = 2;
