@@ -136,7 +136,7 @@
             // 
             this.userTextBox.BackColor = System.Drawing.SystemColors.MenuBar;
             this.userTextBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userTextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.userTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.userTextBox.Location = new System.Drawing.Point(443, 253);
             this.userTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.userTextBox.Name = "userTextBox";
@@ -144,18 +144,22 @@
             this.userTextBox.TabIndex = 9;
             this.userTextBox.Text = "Username";
             this.userTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.userTextBox.Enter += new System.EventHandler(this.nameText_Enter);
+            this.userTextBox.Leave += new System.EventHandler(this.nametext_leave);
             // 
             // passTextBox
             // 
             this.passTextBox.BackColor = System.Drawing.SystemColors.MenuBar;
             this.passTextBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passTextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.passTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.passTextBox.Location = new System.Drawing.Point(446, 330);
             this.passTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.passTextBox.Name = "passTextBox";
             this.passTextBox.Size = new System.Drawing.Size(182, 28);
             this.passTextBox.TabIndex = 10;
             this.passTextBox.Text = "Password";
+            this.passTextBox.Enter += new System.EventHandler(this.passEnter);
+            this.passTextBox.Leave += new System.EventHandler(this.pass_leave);
             // 
             // checkBox1
             // 

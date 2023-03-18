@@ -312,8 +312,8 @@ namespace CVGenesis
 
         private static void SaveScreenshot(Form frm)
         {
-            string imagePath = string.Format($@"C:\Hackathon\CVGenesis\Export\Professional_{GlobalUser._username}.png");
-            string pdfPath = string.Format($@"C:\Hackathon\CVGenesis\Export\Professional_{GlobalUser._username}.pdf");
+            string imagePath = string.Format($@"C:\Hackathon\CVGenesis\Export\Industrial_{GlobalUser._username}.png");
+            string pdfPath = string.Format($@"C:\Hackathon\CVGenesis\Export\Industrial_{GlobalUser._username}.pdf");
             Bitmap Image = new Bitmap(frm.Width, frm.Height);
             frm.DrawToBitmap(Image, new System.Drawing.Rectangle(0, 0, frm.Width, frm.Height));
             Image.Save(imagePath, System.Drawing.Imaging.ImageFormat.Png);
@@ -334,7 +334,7 @@ namespace CVGenesis
         {
             pdfButton.Hide();
             SaveScreenshot(this);
-            CreatePDF($@"C:\Hackathon\CVGenesis\Export\Professional_{GlobalUser._username}.pdf", $@"C:\Hackathon\CVGenesis\Export\Professional_{GlobalUser._username}.png");
+            CreatePDF($@"C:\Hackathon\CVGenesis\Export\Industrial_{GlobalUser._username}.pdf", $@"C:\Hackathon\CVGenesis\Export\Industrial_{GlobalUser._username}.png");
         }
 
         private void BackButton_Click(object sender, EventArgs e)

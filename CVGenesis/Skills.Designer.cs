@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Skills));
             this.panel1 = new System.Windows.Forms.Panel();
             this.skillListBox = new System.Windows.Forms.ListBox();
@@ -44,6 +45,7 @@
             this.otherSkillTextBox = new System.Windows.Forms.TextBox();
             this.saveOther = new System.Windows.Forms.Button();
             this.addOther = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -102,7 +104,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(301, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(438, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(63, 45);
             this.pictureBox1.TabIndex = 4;
@@ -215,6 +217,7 @@
             this.langComboBox.Name = "langComboBox";
             this.langComboBox.Size = new System.Drawing.Size(244, 24);
             this.langComboBox.TabIndex = 73;
+            this.toolTip1.SetToolTip(this.langComboBox, "Choose the language you are proficient in");
             // 
             // digitalComboBox
             // 
@@ -240,6 +243,7 @@
             this.digitalComboBox.Name = "digitalComboBox";
             this.digitalComboBox.Size = new System.Drawing.Size(244, 24);
             this.digitalComboBox.TabIndex = 77;
+            this.toolTip1.SetToolTip(this.digitalComboBox, "Include your digital skills");
             // 
             // label2
             // 
@@ -270,11 +274,12 @@
             this.otherSkillTextBox.BackColor = System.Drawing.SystemColors.MenuBar;
             this.otherSkillTextBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otherSkillTextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.otherSkillTextBox.Location = new System.Drawing.Point(4, 418);
+            this.otherSkillTextBox.Location = new System.Drawing.Point(7, 418);
             this.otherSkillTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.otherSkillTextBox.Name = "otherSkillTextBox";
             this.otherSkillTextBox.Size = new System.Drawing.Size(244, 28);
             this.otherSkillTextBox.TabIndex = 81;
+            this.toolTip1.SetToolTip(this.otherSkillTextBox, "Include if you have any other skills");
             // 
             // saveOther
             // 
@@ -346,5 +351,6 @@
         private System.Windows.Forms.TextBox otherSkillTextBox;
         private System.Windows.Forms.Button saveOther;
         private System.Windows.Forms.Button addOther;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

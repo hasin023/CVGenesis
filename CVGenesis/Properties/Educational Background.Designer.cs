@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Educational_Background));
             this.panel1 = new System.Windows.Forms.Panel();
             this.BackButton = new System.Windows.Forms.Button();
@@ -49,14 +50,15 @@
             this.AddDegreeButton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.SaveButton = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pubComboBox = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.authorTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.yearComboBox = new System.Windows.Forms.ComboBox();
             this.monthComboBox = new System.Windows.Forms.ComboBox();
             this.dateComboBox = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -104,7 +106,7 @@
             this.NextButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.NextButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NextButton.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.NextButton.Location = new System.Drawing.Point(339, 639);
+            this.NextButton.Location = new System.Drawing.Point(353, 645);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(106, 41);
             this.NextButton.TabIndex = 29;
@@ -125,11 +127,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(-4, 33);
+            this.label1.Location = new System.Drawing.Point(-4, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(380, 35);
+            this.label1.Size = new System.Drawing.Size(314, 28);
             this.label1.TabIndex = 4;
             this.label1.Text = "Educational Background";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -216,6 +218,7 @@
             this.degreeTextBox.Name = "degreeTextBox";
             this.degreeTextBox.Size = new System.Drawing.Size(232, 28);
             this.degreeTextBox.TabIndex = 23;
+            this.toolTip1.SetToolTip(this.degreeTextBox, "Enter the degree you have Obtained");
             // 
             // InstitutionTextBox
             // 
@@ -269,6 +272,7 @@
             this.SubjectComboBox.Name = "SubjectComboBox";
             this.SubjectComboBox.Size = new System.Drawing.Size(232, 24);
             this.SubjectComboBox.TabIndex = 27;
+            this.toolTip1.SetToolTip(this.SubjectComboBox, "Enter you Major");
             // 
             // AddDegreeButton
             // 
@@ -308,17 +312,18 @@
             this.SaveButton.UseVisualStyleBackColor = false;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // comboBox1
+            // pubComboBox
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.pubComboBox.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pubComboBox.FormattingEnabled = true;
+            this.pubComboBox.Items.AddRange(new object[] {
             "Academic Article",
             "Book"});
-            this.comboBox1.Location = new System.Drawing.Point(11, 465);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(232, 24);
-            this.comboBox1.TabIndex = 58;
+            this.pubComboBox.Location = new System.Drawing.Point(11, 465);
+            this.pubComboBox.Name = "pubComboBox";
+            this.pubComboBox.Size = new System.Drawing.Size(232, 24);
+            this.pubComboBox.TabIndex = 58;
+            this.toolTip1.SetToolTip(this.pubComboBox, "If you have published any article or book");
             // 
             // label9
             // 
@@ -326,22 +331,22 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label9.Location = new System.Drawing.Point(7, 440);
+            this.label9.Location = new System.Drawing.Point(7, 436);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(113, 22);
             this.label9.TabIndex = 57;
             this.label9.Text = "Publications";
             // 
-            // textBox1
+            // authorTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.textBox1.Location = new System.Drawing.Point(11, 529);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 28);
-            this.textBox1.TabIndex = 60;
+            this.authorTextBox.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.authorTextBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.authorTextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.authorTextBox.Location = new System.Drawing.Point(11, 529);
+            this.authorTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.authorTextBox.Name = "authorTextBox";
+            this.authorTextBox.Size = new System.Drawing.Size(232, 28);
+            this.authorTextBox.TabIndex = 60;
             // 
             // label10
             // 
@@ -349,7 +354,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label10.Location = new System.Drawing.Point(12, 504);
+            this.label10.Location = new System.Drawing.Point(12, 499);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(77, 22);
             this.label10.TabIndex = 59;
@@ -570,9 +575,9 @@
             this.Controls.Add(this.monthComboBox);
             this.Controls.Add(this.dateComboBox);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.authorTextBox);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.pubComboBox);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.SaveButton);
             this.Controls.Add(this.label8);
@@ -624,13 +629,14 @@
         private System.Windows.Forms.ListBox eduListBox;
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button BackButton;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox pubComboBox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox authorTextBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox yearComboBox;
         private System.Windows.Forms.ComboBox monthComboBox;
         private System.Windows.Forms.ComboBox dateComboBox;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

@@ -40,7 +40,7 @@ namespace CVGenesis.Properties
             using (StreamWriter sw = System.IO.File.AppendText(newUser))
             {
                 string s = $"" +
-                    $"{count}.{degreeTextBox.Text},{InstitutionTextBox.Text},{SubjectComboBox.Text},{yearTextBox.Text},{resultTextBox.Text}";
+                    $"{count}.{degreeTextBox.Text},{InstitutionTextBox.Text},{SubjectComboBox.Text},{yearTextBox.Text},{resultTextBox.Text},{pubComboBox.Text},{authorTextBox.Text},{dateComboBox.Text + "-" + monthComboBox.Text + "-" + yearComboBox.Text}";
                 sw.WriteLine(s);
                 count++;
             }
@@ -48,7 +48,7 @@ namespace CVGenesis.Properties
         }
         private void AddDegreeButton_Click(object sender, EventArgs e)
         {
-            Degree _temp = new Degree(degreeTextBox.Text, InstitutionTextBox.Text, SubjectComboBox.Text, yearTextBox.Text,Convert.ToDouble(resultTextBox.Text));
+            Degree _temp = new Degree(degreeTextBox.Text, InstitutionTextBox.Text, SubjectComboBox.Text, yearTextBox.Text,Convert.ToDouble(resultTextBox.Text),pubComboBox.Text,authorTextBox.Text,dateComboBox.Text+ "-" +monthComboBox.Text+ "-" +yearComboBox.Text);
             eduListBox.Items.Add(_temp.getDegree());
         }
 

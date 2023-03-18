@@ -83,6 +83,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateLabel = new System.Windows.Forms.Label();
+            this.authorLabel = new System.Windows.Forms.Label();
+            this.backLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pdfButton = new System.Windows.Forms.Button();
+            this.otherskillLabel = new System.Windows.Forms.Label();
+            this.digitalskillLabel = new System.Windows.Forms.Label();
+            this.publiLabel = new System.Windows.Forms.Label();
+            this.lanskillLabel = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label63 = new System.Windows.Forms.Label();
             this.nationLabel = new System.Windows.Forms.Label();
@@ -102,13 +111,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.degreeLabel2 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.lanskillLabel = new System.Windows.Forms.Label();
-            this.publiLabel = new System.Windows.Forms.Label();
-            this.digitalskillLabel = new System.Windows.Forms.Label();
-            this.otherskillLabel = new System.Windows.Forms.Label();
-            this.pdfButton = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.backLinkLabel = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -629,9 +631,9 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(24, 456);
+            this.pictureBox3.Location = new System.Drawing.Point(24, 458);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.Size = new System.Drawing.Size(38, 36);
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
             // 
@@ -650,9 +652,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(24, 407);
+            this.pictureBox2.Location = new System.Drawing.Point(23, 409);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(39, 43);
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
@@ -740,6 +742,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Controls.Add(this.dateLabel);
+            this.panel1.Controls.Add(this.authorLabel);
             this.panel1.Controls.Add(this.backLinkLabel);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.pdfButton);
@@ -772,6 +776,110 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(383, 1059);
             this.panel1.TabIndex = 66;
+            // 
+            // dateLabel
+            // 
+            this.dateLabel.AutoSize = true;
+            this.dateLabel.BackColor = System.Drawing.Color.Transparent;
+            this.dateLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.dateLabel.Location = new System.Drawing.Point(245, 798);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(48, 22);
+            this.dateLabel.TabIndex = 123;
+            this.dateLabel.Text = "date";
+            // 
+            // authorLabel
+            // 
+            this.authorLabel.AutoSize = true;
+            this.authorLabel.BackColor = System.Drawing.Color.Transparent;
+            this.authorLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.authorLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.authorLabel.Location = new System.Drawing.Point(25, 832);
+            this.authorLabel.Name = "authorLabel";
+            this.authorLabel.Size = new System.Drawing.Size(66, 22);
+            this.authorLabel.TabIndex = 122;
+            this.authorLabel.Text = "author";
+            // 
+            // backLinkLabel
+            // 
+            this.backLinkLabel.AutoSize = true;
+            this.backLinkLabel.Location = new System.Drawing.Point(154, 923);
+            this.backLinkLabel.Name = "backLinkLabel";
+            this.backLinkLabel.Size = new System.Drawing.Size(38, 16);
+            this.backLinkLabel.TabIndex = 121;
+            this.backLinkLabel.TabStop = true;
+            this.backLinkLabel.Text = "Back";
+            this.backLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.backLinkLabel_LinkClicked);
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel8.Location = new System.Drawing.Point(24, 680);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(373, 1);
+            this.panel8.TabIndex = 120;
+            // 
+            // pdfButton
+            // 
+            this.pdfButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pdfButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pdfButton.ForeColor = System.Drawing.Color.Transparent;
+            this.pdfButton.Location = new System.Drawing.Point(124, 871);
+            this.pdfButton.Name = "pdfButton";
+            this.pdfButton.Size = new System.Drawing.Size(106, 41);
+            this.pdfButton.TabIndex = 118;
+            this.pdfButton.Text = "Download";
+            this.pdfButton.UseVisualStyleBackColor = false;
+            this.pdfButton.Click += new System.EventHandler(this.pdfButton_Click);
+            // 
+            // otherskillLabel
+            // 
+            this.otherskillLabel.AutoSize = true;
+            this.otherskillLabel.BackColor = System.Drawing.Color.Transparent;
+            this.otherskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.otherskillLabel.Location = new System.Drawing.Point(20, 600);
+            this.otherskillLabel.Name = "otherskillLabel";
+            this.otherskillLabel.Size = new System.Drawing.Size(79, 22);
+            this.otherskillLabel.TabIndex = 116;
+            this.otherskillLabel.Text = "Address";
+            // 
+            // digitalskillLabel
+            // 
+            this.digitalskillLabel.AutoSize = true;
+            this.digitalskillLabel.BackColor = System.Drawing.Color.Transparent;
+            this.digitalskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.digitalskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.digitalskillLabel.Location = new System.Drawing.Point(22, 557);
+            this.digitalskillLabel.Name = "digitalskillLabel";
+            this.digitalskillLabel.Size = new System.Drawing.Size(79, 22);
+            this.digitalskillLabel.TabIndex = 115;
+            this.digitalskillLabel.Text = "Address";
+            // 
+            // publiLabel
+            // 
+            this.publiLabel.AutoSize = true;
+            this.publiLabel.BackColor = System.Drawing.Color.Transparent;
+            this.publiLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.publiLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.publiLabel.Location = new System.Drawing.Point(25, 798);
+            this.publiLabel.Name = "publiLabel";
+            this.publiLabel.Size = new System.Drawing.Size(113, 22);
+            this.publiLabel.TabIndex = 114;
+            this.publiLabel.Text = "Publications";
+            // 
+            // lanskillLabel
+            // 
+            this.lanskillLabel.AutoSize = true;
+            this.lanskillLabel.BackColor = System.Drawing.Color.Transparent;
+            this.lanskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lanskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lanskillLabel.Location = new System.Drawing.Point(25, 691);
+            this.lanskillLabel.Name = "lanskillLabel";
+            this.lanskillLabel.Size = new System.Drawing.Size(79, 22);
+            this.lanskillLabel.TabIndex = 112;
+            this.lanskillLabel.Text = "Address";
             // 
             // panel7
             // 
@@ -995,86 +1103,6 @@
             this.label15.Size = new System.Drawing.Size(0, 35);
             this.label15.TabIndex = 67;
             // 
-            // lanskillLabel
-            // 
-            this.lanskillLabel.AutoSize = true;
-            this.lanskillLabel.BackColor = System.Drawing.Color.Transparent;
-            this.lanskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lanskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lanskillLabel.Location = new System.Drawing.Point(25, 691);
-            this.lanskillLabel.Name = "lanskillLabel";
-            this.lanskillLabel.Size = new System.Drawing.Size(79, 22);
-            this.lanskillLabel.TabIndex = 112;
-            this.lanskillLabel.Text = "Address";
-            // 
-            // publiLabel
-            // 
-            this.publiLabel.AutoSize = true;
-            this.publiLabel.BackColor = System.Drawing.Color.Transparent;
-            this.publiLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.publiLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.publiLabel.Location = new System.Drawing.Point(25, 798);
-            this.publiLabel.Name = "publiLabel";
-            this.publiLabel.Size = new System.Drawing.Size(113, 22);
-            this.publiLabel.TabIndex = 114;
-            this.publiLabel.Text = "Publications";
-            // 
-            // digitalskillLabel
-            // 
-            this.digitalskillLabel.AutoSize = true;
-            this.digitalskillLabel.BackColor = System.Drawing.Color.Transparent;
-            this.digitalskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.digitalskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.digitalskillLabel.Location = new System.Drawing.Point(22, 557);
-            this.digitalskillLabel.Name = "digitalskillLabel";
-            this.digitalskillLabel.Size = new System.Drawing.Size(79, 22);
-            this.digitalskillLabel.TabIndex = 115;
-            this.digitalskillLabel.Text = "Address";
-            // 
-            // otherskillLabel
-            // 
-            this.otherskillLabel.AutoSize = true;
-            this.otherskillLabel.BackColor = System.Drawing.Color.Transparent;
-            this.otherskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.otherskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.otherskillLabel.Location = new System.Drawing.Point(20, 600);
-            this.otherskillLabel.Name = "otherskillLabel";
-            this.otherskillLabel.Size = new System.Drawing.Size(79, 22);
-            this.otherskillLabel.TabIndex = 116;
-            this.otherskillLabel.Text = "Address";
-            // 
-            // pdfButton
-            // 
-            this.pdfButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.pdfButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pdfButton.ForeColor = System.Drawing.Color.Transparent;
-            this.pdfButton.Location = new System.Drawing.Point(124, 857);
-            this.pdfButton.Name = "pdfButton";
-            this.pdfButton.Size = new System.Drawing.Size(106, 41);
-            this.pdfButton.TabIndex = 118;
-            this.pdfButton.Text = "Download";
-            this.pdfButton.UseVisualStyleBackColor = false;
-            this.pdfButton.Click += new System.EventHandler(this.pdfButton_Click);
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.SystemColors.Highlight;
-            this.panel8.Location = new System.Drawing.Point(24, 680);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(373, 1);
-            this.panel8.TabIndex = 120;
-            // 
-            // backLinkLabel
-            // 
-            this.backLinkLabel.AutoSize = true;
-            this.backLinkLabel.Location = new System.Drawing.Point(154, 913);
-            this.backLinkLabel.Name = "backLinkLabel";
-            this.backLinkLabel.Size = new System.Drawing.Size(38, 16);
-            this.backLinkLabel.TabIndex = 121;
-            this.backLinkLabel.TabStop = true;
-            this.backLinkLabel.Text = "Back";
-            this.backLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.backLinkLabel_LinkClicked);
-            // 
             // Academic_Template
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1231,5 +1259,7 @@
         private System.Windows.Forms.Button pdfButton;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.LinkLabel backLinkLabel;
+        private System.Windows.Forms.Label authorLabel;
+        private System.Windows.Forms.Label dateLabel;
     }
 }

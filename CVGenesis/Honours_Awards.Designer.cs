@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Honours_Awards));
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,12 +43,13 @@
             this.monthComboBox1 = new System.Windows.Forms.ComboBox();
             this.yearComboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.awardsListBox = new System.Windows.Forms.ListBox();
+            this.skipButton = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.saveButton = new System.Windows.Forms.Button();
-            this.skipButton = new System.Windows.Forms.Button();
-            this.awardsListBox = new System.Windows.Forms.ListBox();
             this.addButton = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -98,6 +100,9 @@
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(244, 28);
             this.titleTextBox.TabIndex = 42;
+            this.toolTip1.SetToolTip(this.titleTextBox, "List any honour or award you have been \r\ngranted to acknowledge your special achi" +
+        "evements \r\nand important engagements. Describe why \r\nyou received such acknowled" +
+        "gements.");
             // 
             // label2
             // 
@@ -365,6 +370,30 @@
             this.panel1.Size = new System.Drawing.Size(519, 770);
             this.panel1.TabIndex = 51;
             // 
+            // awardsListBox
+            // 
+            this.awardsListBox.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.awardsListBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.awardsListBox.FormattingEnabled = true;
+            this.awardsListBox.ItemHeight = 22;
+            this.awardsListBox.Location = new System.Drawing.Point(0, 193);
+            this.awardsListBox.Name = "awardsListBox";
+            this.awardsListBox.Size = new System.Drawing.Size(518, 224);
+            this.awardsListBox.TabIndex = 58;
+            // 
+            // skipButton
+            // 
+            this.skipButton.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.skipButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.skipButton.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.skipButton.Location = new System.Drawing.Point(37, 551);
+            this.skipButton.Name = "skipButton";
+            this.skipButton.Size = new System.Drawing.Size(106, 41);
+            this.skipButton.TabIndex = 31;
+            this.skipButton.Text = "Back";
+            this.skipButton.UseVisualStyleBackColor = false;
+            this.skipButton.Click += new System.EventHandler(this.skipButton_Click);
+            // 
             // nextButton
             // 
             this.nextButton.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -381,7 +410,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(301, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(444, 13);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(63, 45);
             this.pictureBox1.TabIndex = 4;
@@ -399,30 +428,6 @@
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = false;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
-            // 
-            // skipButton
-            // 
-            this.skipButton.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.skipButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skipButton.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.skipButton.Location = new System.Drawing.Point(37, 551);
-            this.skipButton.Name = "skipButton";
-            this.skipButton.Size = new System.Drawing.Size(106, 41);
-            this.skipButton.TabIndex = 31;
-            this.skipButton.Text = "Back";
-            this.skipButton.UseVisualStyleBackColor = false;
-            this.skipButton.Click += new System.EventHandler(this.skipButton_Click);
-            // 
-            // awardsListBox
-            // 
-            this.awardsListBox.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.awardsListBox.Font = new System.Drawing.Font("Microsoft JhengHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.awardsListBox.FormattingEnabled = true;
-            this.awardsListBox.ItemHeight = 22;
-            this.awardsListBox.Location = new System.Drawing.Point(0, 193);
-            this.awardsListBox.Name = "awardsListBox";
-            this.awardsListBox.Size = new System.Drawing.Size(518, 224);
-            this.awardsListBox.TabIndex = 58;
             // 
             // addButton
             // 
@@ -489,5 +494,6 @@
         private System.Windows.Forms.Button skipButton;
         private System.Windows.Forms.ListBox awardsListBox;
         private System.Windows.Forms.Button addButton;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

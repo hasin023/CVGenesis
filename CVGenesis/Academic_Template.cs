@@ -99,7 +99,9 @@ namespace CVGenesis
                         subLabel1.Text = k[2];
                         yearLabel1.Text = k[3];
                         resLabel1.Text = k[4];
-
+                        publiLabel.Text = k[5];
+                        authorLabel.Text= k[6];
+                        dateLabel.Text = k[7];
                     }
 
                    else  if (s.Contains("2."))
@@ -113,6 +115,9 @@ namespace CVGenesis
                         subLabel2.Text = k[2];
                         yearLabel2.Text = k[3];
                         resLabel2.Text = k[4];
+                        publiLabel.Text = k[5];
+                        authorLabel.Text = k[6];
+                        dateLabel.Text = k[7];
 
                     }
 
@@ -127,6 +132,9 @@ namespace CVGenesis
                         subLabel3.Text = k[2];
                         yearLabel3.Text = k[3];
                         resLabel3.Text = k[4];
+                        publiLabel.Text = k[5];
+                        authorLabel.Text = k[6];
+                        dateLabel.Text = k[7];
 
                     }
 

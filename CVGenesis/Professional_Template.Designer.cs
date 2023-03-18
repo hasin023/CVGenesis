@@ -32,6 +32,14 @@
             this.firstnameLabel = new System.Windows.Forms.Label();
             this.lastnameLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.backLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pdfButton = new System.Windows.Forms.Button();
+            this.otherskillLabel = new System.Windows.Forms.Label();
+            this.digitalskillLabel = new System.Windows.Forms.Label();
+            this.lanskillLabel = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.genderLabel = new System.Windows.Forms.Label();
@@ -71,9 +79,6 @@
             this.label41 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label52 = new System.Windows.Forms.Label();
-            this.otherskillLabel = new System.Windows.Forms.Label();
-            this.digitalskillLabel = new System.Windows.Forms.Label();
-            this.lanskillLabel = new System.Windows.Forms.Label();
             this.toLabel2 = new System.Windows.Forms.Label();
             this.formLabel2 = new System.Windows.Forms.Label();
             this.orgLabel2 = new System.Windows.Forms.Label();
@@ -100,15 +105,10 @@
             this.DOWLabel1 = new System.Windows.Forms.Label();
             this.eventLabel1 = new System.Windows.Forms.Label();
             this.titleLabel1 = new System.Windows.Forms.Label();
-            this.pdfButton = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.backLinkLabel = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // firstnameLabel
@@ -166,6 +166,93 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(341, 1059);
             this.panel1.TabIndex = 4;
+            // 
+            // backLinkLabel
+            // 
+            this.backLinkLabel.AutoSize = true;
+            this.backLinkLabel.Location = new System.Drawing.Point(144, 869);
+            this.backLinkLabel.Name = "backLinkLabel";
+            this.backLinkLabel.Size = new System.Drawing.Size(38, 16);
+            this.backLinkLabel.TabIndex = 125;
+            this.backLinkLabel.TabStop = true;
+            this.backLinkLabel.Text = "Back";
+            this.backLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.backLinkLabel_LinkClicked);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(29, 480);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(45, 43);
+            this.pictureBox2.TabIndex = 124;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(29, 431);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(45, 43);
+            this.pictureBox1.TabIndex = 123;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(29, 375);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(34, 33);
+            this.pictureBox4.TabIndex = 122;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pdfButton
+            // 
+            this.pdfButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.pdfButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pdfButton.ForeColor = System.Drawing.Color.Transparent;
+            this.pdfButton.Location = new System.Drawing.Point(106, 799);
+            this.pdfButton.Name = "pdfButton";
+            this.pdfButton.Size = new System.Drawing.Size(106, 41);
+            this.pdfButton.TabIndex = 120;
+            this.pdfButton.Text = "Download";
+            this.pdfButton.UseVisualStyleBackColor = false;
+            this.pdfButton.Click += new System.EventHandler(this.pdfButton_Click);
+            // 
+            // otherskillLabel
+            // 
+            this.otherskillLabel.AutoSize = true;
+            this.otherskillLabel.BackColor = System.Drawing.Color.Transparent;
+            this.otherskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.otherskillLabel.Location = new System.Drawing.Point(36, 643);
+            this.otherskillLabel.Name = "otherskillLabel";
+            this.otherskillLabel.Size = new System.Drawing.Size(79, 22);
+            this.otherskillLabel.TabIndex = 119;
+            this.otherskillLabel.Text = "Address";
+            // 
+            // digitalskillLabel
+            // 
+            this.digitalskillLabel.AutoSize = true;
+            this.digitalskillLabel.BackColor = System.Drawing.Color.Transparent;
+            this.digitalskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.digitalskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.digitalskillLabel.Location = new System.Drawing.Point(34, 600);
+            this.digitalskillLabel.Name = "digitalskillLabel";
+            this.digitalskillLabel.Size = new System.Drawing.Size(79, 22);
+            this.digitalskillLabel.TabIndex = 118;
+            this.digitalskillLabel.Text = "Address";
+            // 
+            // lanskillLabel
+            // 
+            this.lanskillLabel.AutoSize = true;
+            this.lanskillLabel.BackColor = System.Drawing.Color.Transparent;
+            this.lanskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lanskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lanskillLabel.Location = new System.Drawing.Point(34, 731);
+            this.lanskillLabel.Name = "lanskillLabel";
+            this.lanskillLabel.Size = new System.Drawing.Size(79, 22);
+            this.lanskillLabel.TabIndex = 117;
+            this.lanskillLabel.Text = "Address";
             // 
             // label62
             // 
@@ -413,7 +500,7 @@
             this.panel2.Location = new System.Drawing.Point(757, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(51, 1059);
+            this.panel2.Size = new System.Drawing.Size(48, 1059);
             this.panel2.TabIndex = 13;
             // 
             // resLabel1
@@ -615,42 +702,6 @@
             this.label52.Size = new System.Drawing.Size(190, 35);
             this.label52.TabIndex = 56;
             this.label52.Text = "Certificates";
-            // 
-            // otherskillLabel
-            // 
-            this.otherskillLabel.AutoSize = true;
-            this.otherskillLabel.BackColor = System.Drawing.Color.Transparent;
-            this.otherskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.otherskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.otherskillLabel.Location = new System.Drawing.Point(36, 643);
-            this.otherskillLabel.Name = "otherskillLabel";
-            this.otherskillLabel.Size = new System.Drawing.Size(79, 22);
-            this.otherskillLabel.TabIndex = 119;
-            this.otherskillLabel.Text = "Address";
-            // 
-            // digitalskillLabel
-            // 
-            this.digitalskillLabel.AutoSize = true;
-            this.digitalskillLabel.BackColor = System.Drawing.Color.Transparent;
-            this.digitalskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.digitalskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.digitalskillLabel.Location = new System.Drawing.Point(34, 600);
-            this.digitalskillLabel.Name = "digitalskillLabel";
-            this.digitalskillLabel.Size = new System.Drawing.Size(79, 22);
-            this.digitalskillLabel.TabIndex = 118;
-            this.digitalskillLabel.Text = "Address";
-            // 
-            // lanskillLabel
-            // 
-            this.lanskillLabel.AutoSize = true;
-            this.lanskillLabel.BackColor = System.Drawing.Color.Transparent;
-            this.lanskillLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lanskillLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lanskillLabel.Location = new System.Drawing.Point(34, 731);
-            this.lanskillLabel.Name = "lanskillLabel";
-            this.lanskillLabel.Size = new System.Drawing.Size(79, 22);
-            this.lanskillLabel.TabIndex = 117;
-            this.lanskillLabel.Text = "Address";
             // 
             // toLabel2
             // 
@@ -964,63 +1015,12 @@
             this.titleLabel1.TabIndex = 118;
             this.titleLabel1.Text = "Title";
             // 
-            // pdfButton
-            // 
-            this.pdfButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.pdfButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pdfButton.ForeColor = System.Drawing.Color.Transparent;
-            this.pdfButton.Location = new System.Drawing.Point(106, 799);
-            this.pdfButton.Name = "pdfButton";
-            this.pdfButton.Size = new System.Drawing.Size(106, 41);
-            this.pdfButton.TabIndex = 120;
-            this.pdfButton.Text = "Download";
-            this.pdfButton.UseVisualStyleBackColor = false;
-            this.pdfButton.Click += new System.EventHandler(this.pdfButton_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(29, 375);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(34, 33);
-            this.pictureBox4.TabIndex = 122;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(29, 429);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.TabIndex = 123;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(29, 480);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.TabIndex = 124;
-            this.pictureBox2.TabStop = false;
-            // 
-            // backLinkLabel
-            // 
-            this.backLinkLabel.AutoSize = true;
-            this.backLinkLabel.Location = new System.Drawing.Point(144, 869);
-            this.backLinkLabel.Name = "backLinkLabel";
-            this.backLinkLabel.Size = new System.Drawing.Size(38, 16);
-            this.backLinkLabel.TabIndex = 125;
-            this.backLinkLabel.TabStop = true;
-            this.backLinkLabel.Text = "Back";
-            this.backLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.backLinkLabel_LinkClicked);
-            // 
             // Professional_Template
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(802, 974);
+            this.ClientSize = new System.Drawing.Size(802, 984);
             this.Controls.Add(this.cinsLabel2);
             this.Controls.Add(this.DOWLabel2);
             this.Controls.Add(this.eventLabel2);
@@ -1080,9 +1080,9 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
