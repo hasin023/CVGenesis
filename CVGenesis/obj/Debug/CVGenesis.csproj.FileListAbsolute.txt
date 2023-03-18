@@ -9,3 +9,4 @@ C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.GenerateResource.cac
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.CoreCompileInputs.cache
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.exe
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.pdb
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Properties.Intro.resources
