@@ -1,0 +1,10 @@
+FirstName:Khalid
+LastName:Ador
+Email:hasan@email.com
+Phone:1234567890
+Address:aaaaaaa
+POB:Gram
+Gender:Other
+Nationality:Bahamian
+Marital:Widowed
+DOB:20-8-1921
