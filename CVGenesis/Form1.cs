@@ -17,5 +17,10 @@ namespace CVGenesis
             InitializeComponent();
         }
 
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
