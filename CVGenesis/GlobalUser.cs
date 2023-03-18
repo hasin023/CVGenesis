@@ -9,5 +9,6 @@ namespace CVGenesis
     class GlobalUser
     {
         public static string _username { get; set; }
+        public static string _email { get; set;}
     }
 }

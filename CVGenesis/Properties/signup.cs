@@ -23,6 +23,7 @@ namespace CVGenesis.Properties
             string newUser = $@"C:\Hackathon\CVGenesis\Users\{str}.txt";
 
             GlobalUser._username = userTextBox.Text;
+            GlobalUser._email = emailTextBox.Text;
 
             using (StreamWriter writer = new StreamWriter(newUser))
             {

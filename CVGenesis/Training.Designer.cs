@@ -50,7 +50,6 @@
             this.backButton = new System.Windows.Forms.Button();
             this.nextButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.skipButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
@@ -545,7 +544,7 @@
             this.addButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.addButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addButton.ForeColor = System.Drawing.Color.Transparent;
-            this.addButton.Location = new System.Drawing.Point(2, 464);
+            this.addButton.Location = new System.Drawing.Point(18, 464);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(117, 49);
             this.addButton.TabIndex = 31;
@@ -614,25 +613,12 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // skipButton
-            // 
-            this.skipButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.skipButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.skipButton.ForeColor = System.Drawing.Color.Transparent;
-            this.skipButton.Location = new System.Drawing.Point(283, 464);
-            this.skipButton.Name = "skipButton";
-            this.skipButton.Size = new System.Drawing.Size(117, 49);
-            this.skipButton.TabIndex = 33;
-            this.skipButton.Text = "Skip";
-            this.skipButton.UseVisualStyleBackColor = false;
-            this.skipButton.Click += new System.EventHandler(this.skipButton_Click);
-            // 
             // saveButton
             // 
             this.saveButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.saveButton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButton.ForeColor = System.Drawing.Color.Transparent;
-            this.saveButton.Location = new System.Drawing.Point(141, 464);
+            this.saveButton.Location = new System.Drawing.Point(261, 464);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(117, 49);
             this.saveButton.TabIndex = 55;
@@ -646,7 +632,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(925, 753);
             this.Controls.Add(this.saveButton);
-            this.Controls.Add(this.skipButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.yearComboBox2);
@@ -694,7 +679,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button nextButton;
-        private System.Windows.Forms.Button skipButton;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button backButton;
         private System.Windows.Forms.ListBox trainingListBox;

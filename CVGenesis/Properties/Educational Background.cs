@@ -73,8 +73,23 @@ namespace CVGenesis.Properties
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Training().Show();
+            if(GlobalUser._username == "Guest")
+            {
+                if(degreeTextBox.Text != "" || resultTextBox.Text!= "" || InstitutionTextBox.Text != "")
+                {
+                    this.Hide();
+                    new Training().Show();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                this.Hide();
+                new Training().Show();
+            }
         }
     }
 }
