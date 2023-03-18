@@ -10,3 +10,6 @@ C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.CoreCompileInputs.ca
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.exe
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.pdb
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Properties.Intro.resources
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Properties.Educational_Background.resources
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Properties.signup.resources
+C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Training.resources
