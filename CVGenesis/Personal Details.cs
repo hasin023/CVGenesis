@@ -16,5 +16,10 @@ namespace CVGenesis
         {
             InitializeComponent();
         }
+
+        private void Personal_Details_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

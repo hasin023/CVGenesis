@@ -47,6 +47,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,6 +56,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.listBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -216,11 +219,11 @@
             this.Loginbutton.BackColor = System.Drawing.SystemColors.Highlight;
             this.Loginbutton.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Loginbutton.ForeColor = System.Drawing.Color.Transparent;
-            this.Loginbutton.Location = new System.Drawing.Point(23, 551);
+            this.Loginbutton.Location = new System.Drawing.Point(17, 561);
             this.Loginbutton.Name = "Loginbutton";
-            this.Loginbutton.Size = new System.Drawing.Size(106, 41);
+            this.Loginbutton.Size = new System.Drawing.Size(111, 51);
             this.Loginbutton.TabIndex = 28;
-            this.Loginbutton.Text = "Add Degree";
+            this.Loginbutton.Text = "Add more degree";
             this.Loginbutton.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -228,7 +231,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button1.Location = new System.Drawing.Point(220, 548);
+            this.button1.Location = new System.Drawing.Point(229, 562);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 41);
             this.button1.TabIndex = 29;
@@ -256,11 +259,36 @@
             this.listBox1.Size = new System.Drawing.Size(372, 244);
             this.listBox1.TabIndex = 30;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button2.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Location = new System.Drawing.Point(197, 561);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(117, 49);
+            this.button2.TabIndex = 55;
+            this.button2.Text = "Save";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.button4.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.button4.Location = new System.Drawing.Point(58, 562);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(106, 41);
+            this.button4.TabIndex = 32;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // Educational_Background
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 753);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.Loginbutton);
             this.Controls.Add(this.comboBox1);
@@ -306,5 +334,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button4;
     }
 }

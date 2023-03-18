@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CVGenesis
 {
-    public partial class CVGenesis : Form
+    public partial class Login : Form
     {
-        public CVGenesis()
+        public Login()
         {
             InitializeComponent();
         }
