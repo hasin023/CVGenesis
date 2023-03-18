@@ -332,6 +332,8 @@ namespace CVGenesis
 
         private void pdfButton_Click(object sender, EventArgs e)
         {
+            selectButton.Hide();
+            loadButton.Hide();
             pdfButton.Hide();
             SaveScreenshot(this);
             CreatePDF($@"C:\Hackathon\CVGenesis\Export\Industrial_{GlobalUser._username}.pdf", $@"C:\Hackathon\CVGenesis\Export\Industrial_{GlobalUser._username}.png");
@@ -347,6 +349,39 @@ namespace CVGenesis
         {
             this.Hide();
             new Preview().Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void selectButton_Click(object sender, EventArgs e)
+        {
+            string filelocation = "";
+            OpenFileDialog fdlg = new OpenFileDialog();
+            fdlg.Title = "Browse Image File";
+            fdlg.Filter = "Image Files (*.BMP;*.JPG;*.GIF)|*.BMP;*.JPG;*.GIF|All Files(*.*)|*.*";
+            fdlg.FilterIndex = 2;
+            fdlg.RestoreDirectory = true;
+            if (fdlg.ShowDialog() == DialogResult.OK)
+            {
+                filelocation = fdlg.FileName;
+            }
+
+            PictureClass._path = filelocation;
+        }
+
+        private void loadButton_Click(object sender, EventArgs e)
+        {
+            if (PictureClass._path != "")
+            {
+                Properties.Settings.Default.FileString = PictureClass._path;
+                Properties.Settings.Default.Save();
+            }
+
+            System.Drawing.Image image = System.Drawing.Image.FromFile(Properties.Settings.Default.FileString);
+            this.pictureBox.Image = image;
         }
     }
 }

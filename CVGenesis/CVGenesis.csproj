@@ -80,6 +80,7 @@
     <Compile Include="Personal Details.Designer.cs">
       <DependentUpon>Personal Details.cs</DependentUpon>
     </Compile>
+    <Compile Include="PictureClass.cs" />
     <Compile Include="Preview.cs">
       <SubType>Form</SubType>
     </Compile>
