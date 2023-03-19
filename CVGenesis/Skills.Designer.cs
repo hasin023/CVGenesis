@@ -42,10 +42,12 @@
             this.digitalComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.otherSkillTextBox = new System.Windows.Forms.TextBox();
             this.saveOther = new System.Windows.Forms.Button();
             this.addOther = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.sgcomboBox = new System.Windows.Forms.ComboBox();
+            this.interestComboBox = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -239,9 +241,9 @@
             "Data analytics and data visualization",
             "Digital marketing",
             "Cybersecurity"});
-            this.digitalComboBox.Location = new System.Drawing.Point(8, 291);
+            this.digitalComboBox.Location = new System.Drawing.Point(8, 258);
             this.digitalComboBox.Name = "digitalComboBox";
-            this.digitalComboBox.Size = new System.Drawing.Size(244, 24);
+            this.digitalComboBox.Size = new System.Drawing.Size(352, 24);
             this.digitalComboBox.TabIndex = 77;
             this.toolTip1.SetToolTip(this.digitalComboBox, "Include your digital skills");
             // 
@@ -251,7 +253,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(4, 252);
+            this.label2.Location = new System.Drawing.Point(4, 219);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 22);
             this.label2.TabIndex = 76;
@@ -265,21 +267,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label3.Location = new System.Drawing.Point(4, 381);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 22);
+            this.label3.Size = new System.Drawing.Size(154, 22);
             this.label3.TabIndex = 80;
-            this.label3.Text = "Other Skills";
-            // 
-            // otherSkillTextBox
-            // 
-            this.otherSkillTextBox.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.otherSkillTextBox.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.otherSkillTextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.otherSkillTextBox.Location = new System.Drawing.Point(7, 418);
-            this.otherSkillTextBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.otherSkillTextBox.Name = "otherSkillTextBox";
-            this.otherSkillTextBox.Size = new System.Drawing.Size(244, 28);
-            this.otherSkillTextBox.TabIndex = 81;
-            this.toolTip1.SetToolTip(this.otherSkillTextBox, "Include if you have any other skills");
+            this.label3.Text = "Suggested Skills";
             // 
             // saveOther
             // 
@@ -307,14 +297,61 @@
             this.addOther.UseVisualStyleBackColor = false;
             this.addOther.Click += new System.EventHandler(this.addOther_Click);
             // 
+            // sgcomboBox
+            // 
+            this.sgcomboBox.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.sgcomboBox.FormattingEnabled = true;
+            this.sgcomboBox.Location = new System.Drawing.Point(8, 427);
+            this.sgcomboBox.Name = "sgcomboBox";
+            this.sgcomboBox.Size = new System.Drawing.Size(352, 24);
+            this.sgcomboBox.TabIndex = 84;
+            this.toolTip1.SetToolTip(this.sgcomboBox, "Include your digital skills");
+            this.sgcomboBox.SelectedIndexChanged += new System.EventHandler(this.sgcomboBox_SelectedIndexChanged);
+            // 
+            // interestComboBox
+            // 
+            this.interestComboBox.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.interestComboBox.FormattingEnabled = true;
+            this.interestComboBox.Items.AddRange(new object[] {
+            "Mathematics",
+            "Science",
+            "English language",
+            "History",
+            "Social studies",
+            "Computer science",
+            "Business",
+            "Psychology",
+            "Health and wellness",
+            "Art and design"});
+            this.interestComboBox.Location = new System.Drawing.Point(8, 345);
+            this.interestComboBox.Name = "interestComboBox";
+            this.interestComboBox.Size = new System.Drawing.Size(352, 24);
+            this.interestComboBox.TabIndex = 86;
+            this.toolTip1.SetToolTip(this.interestComboBox, "Include your digital skills");
+            this.interestComboBox.SelectedIndexChanged += new System.EventHandler(this.interestComboBox_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label5.Location = new System.Drawing.Point(4, 306);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(148, 22);
+            this.label5.TabIndex = 85;
+            this.label5.Text = "Field of Interest";
+            // 
             // Skills
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(923, 753);
+            this.Controls.Add(this.interestComboBox);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.sgcomboBox);
             this.Controls.Add(this.saveOther);
             this.Controls.Add(this.addOther);
-            this.Controls.Add(this.otherSkillTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.digitalComboBox);
             this.Controls.Add(this.label2);
@@ -327,6 +364,7 @@
             this.Name = "Skills";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Skills";
+            this.Load += new System.EventHandler(this.Skills_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -348,9 +386,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox skillListBox;
-        private System.Windows.Forms.TextBox otherSkillTextBox;
         private System.Windows.Forms.Button saveOther;
         private System.Windows.Forms.Button addOther;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ComboBox sgcomboBox;
+        private System.Windows.Forms.ComboBox interestComboBox;
+        private System.Windows.Forms.Label label5;
     }
 }
