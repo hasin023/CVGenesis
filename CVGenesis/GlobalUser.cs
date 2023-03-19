@@ -10,5 +10,6 @@ namespace CVGenesis
     {
         public static string _username { get; set; }
         public static string _email { get; set;}
+        public static string _interest { get; set; }
     }
 }

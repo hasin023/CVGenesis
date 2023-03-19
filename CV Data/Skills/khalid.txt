@@ -1,1 +1,3 @@
 English,Video editing,Communication
+,,Data structures and algorithms knowledge
+,,Scientific method skills

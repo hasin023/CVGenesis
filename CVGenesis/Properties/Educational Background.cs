@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -46,6 +47,7 @@ namespace CVGenesis.Properties
             }
 
         }
+
         private void AddDegreeButton_Click(object sender, EventArgs e)
         {
             Degree _temp = new Degree(degreeTextBox.Text, InstitutionTextBox.Text, SubjectComboBox.Text, yearTextBox.Text,Convert.ToDouble(resultTextBox.Text),pubComboBox.Text,authorTextBox.Text,dateComboBox.Text+ "-" +monthComboBox.Text+ "-" +yearComboBox.Text);
@@ -54,7 +56,6 @@ namespace CVGenesis.Properties
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            
             addDegree(GlobalUser._username);
             
             MessageBox.Show("Data saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
