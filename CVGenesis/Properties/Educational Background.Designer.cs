@@ -218,7 +218,7 @@
             this.degreeTextBox.Name = "degreeTextBox";
             this.degreeTextBox.Size = new System.Drawing.Size(232, 28);
             this.degreeTextBox.TabIndex = 23;
-            this.toolTip1.SetToolTip(this.degreeTextBox, "Enter the degree you have Obtained");
+            this.toolTip1.SetToolTip(this.degreeTextBox, "Enter the latest 3 degree obtainted\r\n");
             // 
             // InstitutionTextBox
             // 

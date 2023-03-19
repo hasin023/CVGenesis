@@ -84,7 +84,7 @@
             this.skipButton.Name = "skipButton";
             this.skipButton.Size = new System.Drawing.Size(106, 41);
             this.skipButton.TabIndex = 31;
-            this.skipButton.Text = "Skip";
+            this.skipButton.Text = "Back";
             this.skipButton.UseVisualStyleBackColor = false;
             this.skipButton.Click += new System.EventHandler(this.skipButton_Click);
             // 
@@ -286,7 +286,7 @@
             this.saveOther.BackColor = System.Drawing.SystemColors.Highlight;
             this.saveOther.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveOther.ForeColor = System.Drawing.Color.Transparent;
-            this.saveOther.Location = new System.Drawing.Point(154, 523);
+            this.saveOther.Location = new System.Drawing.Point(271, 523);
             this.saveOther.Name = "saveOther";
             this.saveOther.Size = new System.Drawing.Size(102, 38);
             this.saveOther.TabIndex = 83;
@@ -299,7 +299,7 @@
             this.addOther.BackColor = System.Drawing.SystemColors.Highlight;
             this.addOther.Font = new System.Drawing.Font("Arial", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addOther.ForeColor = System.Drawing.Color.Transparent;
-            this.addOther.Location = new System.Drawing.Point(12, 523);
+            this.addOther.Location = new System.Drawing.Point(31, 523);
             this.addOther.Name = "addOther";
             this.addOther.Size = new System.Drawing.Size(110, 38);
             this.addOther.TabIndex = 82;

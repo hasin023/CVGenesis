@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CVGenesis.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -57,14 +58,31 @@ namespace CVGenesis
         private void skipButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new Preview().Show();
+            new Honours_Awards().Show();
 
         }
 
         private void nextButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Preview().Show();
+            if (GlobalUser._username == "Guest")
+            {
+                if (langComboBox.Text == "" || digitalComboBox.Text == "" || otherSkillTextBox.Text == "")
+                {
+                    MessageBox.Show("Invalid Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                else
+                {
+                    this.Hide();
+                    new Preview().Show();
+                }
+            }
+            else
+            {
+                this.Hide();
+                new Preview().Show();
+            }
+
         }
     }
 }

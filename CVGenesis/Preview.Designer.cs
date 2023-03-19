@@ -38,6 +38,8 @@
             this.profCVButton = new System.Windows.Forms.Button();
             this.academicCVButton = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.signUpLinkLabel = new System.Windows.Forms.LinkLabel();
+            this.regLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -129,11 +131,38 @@
             this.academicCVButton.UseVisualStyleBackColor = false;
             this.academicCVButton.Click += new System.EventHandler(this.academicCVButton_Click);
             // 
+            // signUpLinkLabel
+            // 
+            this.signUpLinkLabel.AutoSize = true;
+            this.signUpLinkLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpLinkLabel.LinkColor = System.Drawing.SystemColors.Highlight;
+            this.signUpLinkLabel.Location = new System.Drawing.Point(630, 459);
+            this.signUpLinkLabel.Name = "signUpLinkLabel";
+            this.signUpLinkLabel.Size = new System.Drawing.Size(78, 22);
+            this.signUpLinkLabel.TabIndex = 18;
+            this.signUpLinkLabel.TabStop = true;
+            this.signUpLinkLabel.Text = "Sign Up";
+            this.signUpLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signUpLinkLabel_LinkClicked);
+            // 
+            // regLabel
+            // 
+            this.regLabel.AutoSize = true;
+            this.regLabel.BackColor = System.Drawing.Color.Transparent;
+            this.regLabel.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regLabel.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.regLabel.Location = new System.Drawing.Point(385, 438);
+            this.regLabel.Name = "regLabel";
+            this.regLabel.Size = new System.Drawing.Size(229, 44);
+            this.regLabel.TabIndex = 17;
+            this.regLabel.Text = "    Wanna use it again?\r\nJoin us to save your Info.";
+            // 
             // Preview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 753);
+            this.Controls.Add(this.signUpLinkLabel);
+            this.Controls.Add(this.regLabel);
             this.Controls.Add(this.academicCVButton);
             this.Controls.Add(this.profCVButton);
             this.Controls.Add(this.label1);
@@ -159,5 +188,7 @@
         private System.Windows.Forms.Button profCVButton;
         private System.Windows.Forms.Button academicCVButton;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.LinkLabel signUpLinkLabel;
+        private System.Windows.Forms.Label regLabel;
     }
 }

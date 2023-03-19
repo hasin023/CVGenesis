@@ -93,8 +93,6 @@ namespace CVGenesis
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-
             checkUser(userTextBox.Text);
         }
 

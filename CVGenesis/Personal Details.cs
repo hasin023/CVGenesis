@@ -40,7 +40,14 @@ namespace CVGenesis
 
         private void Personal_Details_Load(object sender, EventArgs e)
         {
-
+            if(GlobalUser._username!= "Guest")
+            {
+                emailTextBox.Text = GlobalUser._email;
+            }
+            else
+            {
+                emailTextBox.Text = "";
+            }
         }
 
         private void saveButton_Click(object sender, EventArgs e)
@@ -51,8 +58,25 @@ namespace CVGenesis
 
         private void nextButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Educational_Background().Show();
+            if (GlobalUser._username == "Guest")
+            {
+                if (firstTextBox.Text == "" || lastTextBox.Text == "" || addressTextBox.Text == "")
+                {
+                    MessageBox.Show("Invalid Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    
+                }
+                else
+                {
+                    this.Hide();
+                    new Educational_Background().Show();
+                }
+            }
+            else
+            {
+                this.Hide();
+                new Educational_Background().Show();
+            }
+            
         }
     }
 }

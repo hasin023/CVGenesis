@@ -38,5 +38,10 @@ namespace CVGenesis.Properties
             this.Hide();
             new signup().Show();
         }
+
+        private void Intro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -35,8 +35,25 @@ namespace CVGenesis
 
         private void nextButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Work_Experience().Show();
+            if (GlobalUser._username == "Guest")
+            {
+                if (titleTextBox.Text == "" || OrgTextBox.Text == "")
+                {
+                    MessageBox.Show("Invalid Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+                else
+                {
+                    this.Hide();
+                    new Work_Experience().Show();
+                }
+            }
+            else
+            {
+                this.Hide();
+                new Work_Experience().Show();
+            }
+
         }
 
         private void skipButton_Click(object sender, EventArgs e)
