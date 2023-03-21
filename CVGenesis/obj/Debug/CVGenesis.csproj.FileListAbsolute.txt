@@ -24,3 +24,29 @@ C:\Hackathon\CVGenesis\CVGenesis\bin\Debug\BouncyCastle.Crypto.dll
 C:\Hackathon\CVGenesis\CVGenesis\bin\Debug\itextsharp.dll
 C:\Hackathon\CVGenesis\CVGenesis\bin\Debug\itextsharp.xml
 C:\Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.CopyComplete
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\bin\Debug\CVGenesis.exe.config
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\bin\Debug\CVGenesis.exe
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\bin\Debug\CVGenesis.pdb
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\bin\Debug\BouncyCastle.Crypto.dll
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\bin\Debug\itextsharp.dll
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\bin\Debug\itextsharp.xml
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.AssemblyReference.cache
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.SuggestedBindingRedirects.cache
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Academic_Template.resources
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Login.resources
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Honours_Awards.resources
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Personal_Details.resources
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Preview.resources
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Professional_Template.resources
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Properties.Educational_Background.resources
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Properties.Intro.resources
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Properties.Resources.resources
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Properties.signup.resources
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Skills.resources
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Training.resources
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.Work_Experience.resources
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.GenerateResource.cache
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.CoreCompileInputs.cache
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.csproj.CopyComplete
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.exe
+E:\Class Resources-2nd sem\SWE-4202-LAB\CV-GENECIS_Hackathon\CVGenesis\CVGenesis\obj\Debug\CVGenesis.pdb
